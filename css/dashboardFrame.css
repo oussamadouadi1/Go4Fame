@@ -1,0 +1,456 @@
+:root {
+--blue-main:#078ec7;
+--blue-alt:#169fd9;
+--green-main:#05cc9c;
+--green-alt:#10d2a5;
+--orange-color: #f59e0b;
+--red-color: #f44336;
+--grey-color: #888;
+--purple-color:#4F46E5;
+--purple-alt-color:#2F1C53;
+}
+/* Start Box */
+.d-flex {
+display: flex;
+}
+.f-wrap {
+flex-wrap: wrap;
+}
+.align-center {
+align-items: center;
+}
+.space-between {
+justify-content: space-between;
+}
+.d-grid {
+display: grid;
+}
+.gap-20 {
+gap: 20px;
+}
+.d-block {
+display: block;
+}
+@media (max-width: 767px) {
+.block-mobile {
+display: block;
+}
+.hide-mobile {
+display: none;
+}
+}
+/* End Box */
+/* Start Padding + Margin */
+.p-10 {
+padding: 10px;
+}
+.p-12 {
+padding: 12px;
+}
+.p-15 {
+padding: 15px;
+}
+.p-20 {
+padding: 20px;
+}
+.pt-10 {
+padding-top: 10px;
+}
+.pt-15 {
+padding-top: 15px;
+}
+.pt-20 {
+padding-top: 20px;
+}
+.pb-10 {
+padding-bottom: 10px;
+}
+.pb-15 {
+padding-bottom: 15px;
+}
+.pb-20 {
+padding-bottom: 20px;
+}
+.pl-15 {
+padding-left: 15px;
+}
+.m-0 {
+margin: 0;
+}
+.m-15 {
+margin: 15px;
+}
+.m-20 {
+margin: 20px;
+}
+.mt-0 {
+margin-top: 0;
+}
+.mt-5 {
+margin-top: 5px;
+}
+.mt-10 {
+margin-top: 10px;
+}
+.mt-15 {
+margin-top: 15px;
+}
+.mt-20 {
+margin-top: 20px;
+}
+.mt-25 {
+margin-top: 25px;
+}
+.mr-10 {
+margin-right: 10px;
+}
+.mr-15 {
+margin-right: 15px;
+}
+.mb-5 {
+margin-bottom: 5px;
+}
+.mb-10 {
+margin-bottom: 10px;
+}
+.mb-15 {
+margin-bottom: 15px;
+}
+.mb-20 {
+margin-bottom: 20px;
+}
+.mb-25 {
+margin-bottom: 25px;
+}
+/* End Padding + Margin */
+/* Start Color */
+.c-black {
+color: black;
+}
+.c-white {
+color: white;
+}
+.c-grey {
+color: var(--grey-color);
+}
+.c-red {
+color: var(--red-color);
+}
+.c-green {
+color: var(--green-color);
+}
+.c-purple {
+color: #4F46E5;
+}
+.c-altwhite{
+color: #94A3B8;
+}
+.c-blue {
+color: var(--blue-color);
+}
+.c-orange {
+color: var(--orange-color);
+}
+.c-gold {
+color:#cfb831;
+}
+.c-green {
+color: var(--green-main);
+}
+.bg-red {
+background-color: var(--red-color);
+}
+.bg-green {
+background-color: var(--green-main);
+}
+.bg-blue {
+background-color: var(--blue-main);
+}
+.bg-orange {
+background-color: var(--orange-color);
+}
+.bg-white {
+background-color: white;
+}
+.bg-eee {
+background-color: rgba(235, 235, 235, 0.89);
+}
+.bg-purple {
+background-color: #4e46e5;
+}
+.bg-lightpurple {
+background-color: #565c77;
+}
+.bg-darkpurple {
+background-color: var(--purple-alt-color);
+}
+.bg-sidebar {
+background-color: #0F172A;
+}
+.bg-page {
+background-color: #F1F5F9;
+}
+.bg-box {
+background: linear-gradient(
+to left top,
+rgba(255, 255, 255, 1),
+rgba(255, 255, 255, 0.8)
+
+);
+}
+/* End Color */
+/* Start Position */
+.p-relative {
+position: relative;
+}
+.p-absolute {
+position: absolute;
+}
+/* End Position */
+/* Start Font */
+.txt-c {
+text-align: center;
+}
+.fs-13 {
+font-size: 13px;
+}
+.fs-14 {
+font-size: 14px;
+}
+.fs-15 {
+font-size: 15px;
+}
+.fs-25 {
+font-size: 25px;
+}
+.fw-bold {
+font-weight: bold;
+}
+@media (max-width: 767px) {
+.txt-c-mobile {
+text-align: center;
+}
+}
+/* End Font */
+/* Start Border */
+.rad-6 {
+border-radius: 6px;
+}
+.rad-10 {
+border-radius: 10px;
+}
+.rad-half {
+border-radius: 50%;
+}
+.b-none {
+border: none;
+}
+.border-ccc {
+border: 1px solid #ccc;
+}
+.border-eee {
+border: 1px solid #eee;
+}
+
+/* End Border */
+/* Start Width + Height */
+.w-full {
+width: 100%;
+}
+.w-100 {
+width: 100px;
+}
+.w-fit {
+width: fit-content;
+}
+.h-full {
+height: 100%;
+}
+.h-100 {
+height: 100px;
+}
+/* End Width + Height */
+/* cursor */
+.cursor-p {
+cursor: pointer;
+}
+/* cursor */
+
+/* Start Components */
+.center-flex {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.between-flex {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.btn-shape {
+padding: 4px 10px;
+border-radius: 6px;
+}
+/* End Components */
+.glass {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 255, 255, 0.7),
+rgba(255, 255, 255,0.3)
+);
+z-index: 2;
+backdrop-filter: blur(2rem);
+}
+.glassTwo {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 255, 255, 0.9),
+rgba(255, 255, 255, 0.009)
+);
+/* box-shadow */
+
+}
+.box-shadow {
+-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+}
+/* personal pic*/
+.personalPic {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+
+
+:root {
+--blue-main:#01B0F1;
+--blue-alt:#75d0eb;
+--green-main:#00cb64;
+--green-alt:#00cc65;
+--color-white:#ffffff;
+--main-transition: 0.3s;
+--main-padding-top: 100px;
+--main-padding-bottom: 100px;
+--section-background: #ececec;
+}
+
+/* Display */
+.d-flex {
+display: flex;
+}
+.aic {
+align-items: center;
+}
+.jcc {
+justify-content: center;
+}
+.jcs {
+justify-content: space-between;
+}
+/* Display */
+/* colors */
+.c-white {
+color: var(--color-white);
+}
+.c-black {
+color: black;
+}
+.c-blue {
+color: #1DA1F2;
+}
+.c-blueDark {
+color: #0165E1;
+}
+.c-lightGreen {
+color: #25D366;
+}
+.p-purple-inst{
+color: #5851DB;
+}
+.yellow {
+color: 	#d8d509;
+}
+.red-google{
+color: #DB4437;
+}
+
+.c-white {
+color: var(--color-white);
+}
+.c-black {
+color: black;
+}
+.c-blue {
+color: #1DA1F2;
+}
+.c-blueDark {
+color: #0165E1;
+}
+.c-lightGreen {
+color: #25D366;
+}
+.p-purple-inst{
+color: #5851DB;
+}
+.yellow {
+color: 	#eeea00;
+}
+.red-google{
+color: #DB4437;
+}
+.bg-page {
+background-color: #F1F5F9;
+}
+/* colors */
+
+.p-relative {
+position: relative;
+}
+.p-10 {padding: 10px;}
+.pb-5 {
+padding-bottom: 5px!important;
+}
+.pt-0 {  
+padding-top: 0!important;
+}
+.pl-1 {
+padding-left: 1px;
+}
+.col-md-4 {
+position: relative;
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+}
+.mtb {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.w-25 {
+width: 25px;
+}
+
+.glass {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 255, 255, 0.7),
+rgba(255, 255, 255,0.3)
+);
+z-index: 2;
+backdrop-filter: blur(2rem);
+}
+.glassTwo {
+background: white;
+background: linear-gradient(
+to right bottom,
+rgba(255, 255, 255, 0.9),
+rgba(255, 255, 255, 0.009)
+)}
+.bg-white {
+background-color: white;
+}

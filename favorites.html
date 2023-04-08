@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>المفضلة | Go4Fame</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/framework.css" />
+<link rel="stylesheet" href="css/main.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+
+<body>
+<!--  Header -->
+<!--  Header -->
+
+<div class="header " id="header">
+<!-- Announcement Bar -->
+<div class="announcement-bar hide d-flex aic jcc c-white" id="announcement-bar">
+<i class=" fa-solid fa-xmark close-bar " style="cursor: pointer;" ></i>
+<h1> أحصل على زيادة <span>10%</span> من الخدمة المطلوبة عند الدفع عن طريق التحويل البنكي</h1>
+</div>
+<!-- Announcement Bar -->
+<div class="disktop-nav">
+<!-- Nav Top -->
+<ul class="nav-top " >
+<li class="logo-mobile">
+<a href="index.html"  > 
+<img src="./images/logo.png" alt="go4fame"/>                 
+</a>
+</li>
+<li class="email-header" >
+<div class="nav-bar-email">
+<i class="fa-regular fa-envelope c-black"></i>
+<span> go4fame@info.com</span>             
+</div>
+</li>
+
+</li>
+<li class="services-mobile" id="servicesMobile" >
+<a href="#" >  
+<i class="fa-solid fa-store"></i>
+</a>
+</li>
+<li class="home-mobile">
+<a href="index.html">
+<i class="fas fa-home"></i>
+</a>
+</li>
+<li class="join" id="join">
+
+<a href="login.html" id="header-join_button">
+<i class="fa-solid fa-circle-user"></i>    <span>تسجيل الدخول</span>
+</a>  
+</li>
+</li>
+<li id="user-info">
+<a href="profile.html" class="user-name" id="user"></a>
+<img src="./images/avatar1.png" id="user-dropdown-toggle">
+
+<ul class="user-menu" id="user-dropdown-menu">
+<li>
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+الصفحة الرئيسية</a>
+
+</li>
+<li>
+<a href="userDashBoard.html">
+<i class="fa-solid fa-gauge-high"></i> 
+لوحة التحكم
+</a>
+</li>
+<li>
+<a href="#"> 
+
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+تسجيل الخروج
+</a>
+</li>
+</ul>
+
+<!-- JavaScript code -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+// Your code here
+// Get a reference to the dropdown menu element and the button that toggles it
+const dropdownMenu = document.getElementById("user-dropdown-menu");
+const dropdownButton = document.getElementById("user-dropdown-toggle");
+
+// Add a click event listener to the button that toggles the dropdown menu
+dropdownButton.addEventListener("click", function() {
+dropdownMenu.classList.toggle("open-user-menu");
+});
+
+// Add a click event listener to the document object
+document.addEventListener("click", function(event) {
+// Check if the clicked element is inside the dropdown menu or the button that toggles it
+if (!dropdownMenu.contains(event.target) && event.target !== dropdownButton) {
+// If the clicked element is not inside the dropdown menu or the button that toggles it, close the menu
+dropdownMenu.classList.remove("open-user-menu");
+}
+});
+});
+</script>
+<!-- JavaScript code -->
+
+<a href="register.html" id="logout"> 
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+</a>
+</li>
+
+</ul> 
+<!-- Nav Top -->
+<!-- Nav Bottom -->
+<ul class="nav-bottom">
+<li>
+<a href="index.html" class="logo"> 
+<img src="./images/logo.png" alt="go4fame"/>                 
+</a>
+</li>
+<li>
+<div class="search-box p-relative">
+
+<div class="search p-relative">
+<input id="search" class="p-10" type="search" placeholder="أدخل كلمة بحث" />
+</div>
+</div>
+</li>
+<li class="shoppingCart-favorite">
+<div  class="shopping-cart"  >
+<img class="cart" src="./images/cart2.svg" alt="" id="cartToggle"/>
+<span class="s-cart-summary-count "></span>
+<div class="cart-products" id="cart-products">
+<div>
+
+</div>
+<a href="cartproducts.html">
+كل الخدمات في السلة
+</a>
+
+</div>
+
+<div class="shopping-cart-price"> 
+<span class="price">
+0 
+</span>
+<span class="currency">ر.س</span>
+</div>
+
+</div>
+<!-- JavaScript code -->
+<script>
+
+// Get a reference to the dropdown menu element and the button that toggles it
+var cartproducts = document.getElementById("cart-products");
+var cartproductsToggle = document.getElementById("cartToggle");
+
+// Add a click event listener to the button that toggles the dropdown menu
+cartproductsToggle.addEventListener("click", function() {
+cartproducts.classList.toggle("cart-open");
+});
+
+</script>
+<!-- JavaScript code -->
+<div class="favorite-list">
+<a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+</a>
+</div>
+</li>
+</ul>
+<!-- Nav Bottom -->
+</div>
+</div>
+
+<!-- Whatsapp Fixed Icon -->
+<a href="https://api.whatsapp.com/send?phone=+966565555275" target="_blank" class="whatsapp-scroll">
+  <img src="./images/whatsapscroll.svg" alt=""/>
+  </a>
+<!-- Whatsapp Fixed Icon -->
+
+<!--  Header -->
+
+<div class="myFavoritePage bg-page">
+<h3 class="section-title"> المفضلة </h3>
+<div class="container">
+<!-- <section class="products-section" >
+Local Storage
+</section>
+<div class="noProducts">
+  Local Storage
+</div> -->
+<div class="myFavorite-items">
+
+<div class="item">
+<div class="favorite-item-image">
+<img src="./images/product7.png" alt="">
+</div>
+
+<div class="favorite-item-title">
+<a href="productDetails.html" class="title">
+500 متابع |مكس
+</a>
+</div>
+<div class="favorite-item-price">
+<span>
+30 ر.س
+</span>
+</div>
+<div class="favorite-item-action">
+<button class="addToCart">
+<i class="fa-solid fa-cart-plus"></i>
+</button>
+<button class="removeFromFavorite">
+<i class="fas fa-trash-alt"></i>
+</button>
+</div>
+</div>
+<div class="item">
+<div class="favorite-item-image">
+<img src="./images/product8.png" alt="">
+</div>
+
+<div class="favorite-item-title">
+<a href="productDetails.html" class="title">
+1000 متابع انستغرام | مكس
+</a>
+</div>
+<div class="favorite-item-price">
+<span>
+25 ر.س
+</span>
+</div>
+<div class="favorite-item-action">
+<button class="addToCart">
+<i class="fa-solid fa-cart-plus"></i>
+</button>
+<button class="removeFromFavorite">
+<i class="fas fa-trash-alt"></i>
+</button>
+</div>
+</div>
+<div class="item">
+<div class="favorite-item-image">
+<img src="./images/product5.jpg" alt="">
+</div>
+
+<div class="favorite-item-title">
+<a href="productDetails.html" class="title">
+100 تقييم غوغل ماب
+</a>
+</div>
+<div class="favorite-item-price">
+<span>
+20 ر.س
+</span>
+</div>
+<div class="favorite-item-action">
+<button class="addToCart">
+<i class="fa-solid fa-cart-plus"></i>
+</button>
+<button class="removeFromFavorite">
+<i class="fas fa-trash-alt"></i>
+</button>
+</div>
+</div>
+<div class="item">
+<div class="favorite-item-image">
+<img src="./images/product1.png" alt="">
+</div>
+
+<div class="favorite-item-title">
+<a href="productDetails.html" class="title">
+1000 مشترك يوتيوب   
+</a>
+</div>
+<div class="favorite-item-price">
+<span>
+40 ر.س
+</span>
+</div>
+<div class="favorite-item-action">
+<button class="addToCart">
+<i class="fa-solid fa-cart-plus"></i>
+</button>
+<button class="removeFromFavorite">
+<i class="fas fa-trash-alt"></i>
+</button>
+</div>
+</div>
+<div class="item">
+<div class="favorite-item-image">
+<img src="./images/product3.png" alt="">
+</div>
+
+<div class="favorite-item-title">
+<a href="productDetails.html" class="title">
+1000  مشاهدة تغريدة   
+</a>
+</div>
+<div class="favorite-item-price">
+<span>
+40 ر.س
+</span>
+</div>
+<div class="favorite-item-action">
+<button class="addToCart">
+<i class="fa-solid fa-cart-plus"></i>
+</button>
+<button class="removeFromFavorite">
+<i class="fas fa-trash-alt"></i>
+</button>
+</div>
+</div>
+<div class="paginations">
+<button class="btn1">
+<i class="fa-solid fa-angle-right"></i>
+</button>
+<ul>
+<li class="link" value="1">1</li>
+<li class="link" value="2">2</li>
+<li class="link" value="3">3</li>
+<li class="link" value="4">4</li>
+</ul>
+<button class="btn2">
+<i class="fa-solid fa-angle-left"></i>
+</button>
+
+</div>
+
+</div>
+<div class="myFavorite-illustration">
+<img src="./images/myfavoritepage.png" alt=""/>
+<div class="myFavorite-illustration-words">
+<p>نعمل على توفيير احسن الخدمات التي تلائم تطلعات زبائننا الكرام</p>
+</div>
+<a href="index.html" class="visit">
+تسوق الأن
+</a>
+</div>
+</div>
+</div>
+
+<!--  Footer -->
+<div class="footer">
+<div class="footer-container">
+<div class="important-links-footer">
+<div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+<a href="#">
+<i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-instagram p-purple-inst"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-twitter c-blue"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-snapchat yellow "></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-google-plus red-google"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+</a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+<img src="./images/visa.svg" alt="" />
+<img src="./images/bank.svg" alt="" />
+<img src="./images/stc.svg" alt="" />
+<img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+<p>
+2023
+<span> &#169;</span> 
+Go4Fame
+جميع الحقوق محفوظة لموقع    
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="./js/user.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/favorites.js"></script>
+
+
+</body>
+</html>

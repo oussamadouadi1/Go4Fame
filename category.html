@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>الأقسام</title>
+<!-- Swiper CSS -->
+
+<!-- Swiper CSS -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+<!-- Font Awesome -->
+     <link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+<body>
+
+<!--  Header -->
+<!--  Header -->
+
+<div class="header " id="header">
+  <!-- Announcement Bar -->
+  <div class="announcement-bar hide d-flex aic jcc c-white" id="announcement-bar">
+  <i class=" fa-solid fa-xmark close-bar " style="cursor: pointer;" ></i>
+  <h1> أحصل على زيادة <span>10%</span> من الخدمة المطلوبة عند الدفع عن طريق التحويل البنكي</h1>
+  </div>
+  <!-- Announcement Bar -->
+  <div class="disktop-nav">
+  <!-- Nav Top -->
+  <ul class="nav-top " >
+  <li class="logo-mobile">
+  <a href="index.html"  > 
+  <img src="./images/logo.png" alt="go4fame"/>                 
+  </a>
+  </li>
+  <li class="email-header" >
+  <div class="nav-bar-email">
+  <i class="fa-regular fa-envelope c-black"></i>
+  <span> go4fame@info.com</span>             
+  </div>
+  </li>
+  
+  </li>
+  <li class="services-mobile" id="servicesMobile" >
+  <a href="#" >  
+  <i class="fa-solid fa-store"></i>
+  </a>
+  </li>
+  <li class="home-mobile">
+  <a href="index.html">
+  <i class="fas fa-home"></i>
+  </a>
+  </li>
+  <li class="join" id="join">
+  
+  <a href="login.html" id="header-join_button">
+  <i class="fa-solid fa-circle-user"></i>    <span>تسجيل الدخول</span>
+  </a>  
+  </li>
+  </li>
+  <li id="user-info">
+  <a href="profile.html" class="user-name" id="user"></a>
+  <img src="./images/avatar1.png" id="user-dropdown-toggle">
+  
+  <ul class="user-menu" id="user-dropdown-menu">
+  <li>
+  
+  <a href="index.html">
+  <i class="fa-solid fa-house"></i>
+  الصفحة الرئيسية</a>
+  
+  </li>
+  <li>
+  <a href="userDashBoard.html">
+  <i class="fa-solid fa-gauge-high"></i> 
+  لوحة التحكم
+  </a>
+  </li>
+  <li>
+  <a href="#"> 
+  
+  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+  تسجيل الخروج
+  </a>
+  </li>
+  </ul>
+  
+  <!-- JavaScript code -->
+  <script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  // Your code here
+  // Get a reference to the dropdown menu element and the button that toggles it
+  const dropdownMenu = document.getElementById("user-dropdown-menu");
+  const dropdownButton = document.getElementById("user-dropdown-toggle");
+  
+  // Add a click event listener to the button that toggles the dropdown menu
+  dropdownButton.addEventListener("click", function() {
+  dropdownMenu.classList.toggle("open-user-menu");
+  });
+  
+  // Add a click event listener to the document object
+  document.addEventListener("click", function(event) {
+  // Check if the clicked element is inside the dropdown menu or the button that toggles it
+  if (!dropdownMenu.contains(event.target) && event.target !== dropdownButton) {
+  // If the clicked element is not inside the dropdown menu or the button that toggles it, close the menu
+  dropdownMenu.classList.remove("open-user-menu");
+  }
+  });
+  });
+  </script>
+  <!-- JavaScript code -->
+  
+  <a href="register.html" id="logout"> 
+  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+  </a>
+  </li>
+  
+  </ul> 
+  <!-- Nav Top -->
+  <!-- Nav Bottom -->
+  <ul class="nav-bottom">
+  <li>
+  <a href="index.html" class="logo"> 
+  <img src="./images/logo.png" alt="go4fame"/>                 
+  </a>
+  </li>
+  <li>
+  <div class="search-box p-relative">
+  
+  <div class="search p-relative">
+  <input id="search" class="p-10" type="search" placeholder="أدخل كلمة بحث" />
+  </div>
+  </div>
+  </li>
+  <li class="shoppingCart-favorite">
+  <div  class="shopping-cart"  >
+  <img class="cart" src="./images/cart2.svg" alt="" id="cartToggle"/>
+  <span class="s-cart-summary-count "></span>
+  <div class="cart-products" id="cart-products">
+  <div>
+  
+  </div>
+  <a href="cartproducts.html">
+  كل الخدمات في السلة
+  </a>
+  
+  </div>
+  
+  <div class="shopping-cart-price"> 
+  <span class="price">
+  0 
+  </span>
+  <span class="currency">ر.س</span>
+  </div>
+  
+  </div>
+  <!-- JavaScript code -->
+  <script>
+  
+  // Get a reference to the dropdown menu element and the button that toggles it
+  var cartproducts = document.getElementById("cart-products");
+  var cartproductsToggle = document.getElementById("cartToggle");
+  
+  // Add a click event listener to the button that toggles the dropdown menu
+  cartproductsToggle.addEventListener("click", function() {
+  cartproducts.classList.toggle("cart-open");
+  });
+  
+  
+  </script>
+  <!-- JavaScript code -->
+  <div class="favorite-list">
+  <a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+  </a>
+  </div>
+  </li>
+  </ul>
+  <!-- Nav Bottom -->
+  </div>
+<!-- Category links on the header -->
+<nav class="category-links">
+<ul>
+<li>
+<a href="#">
+تحديثات المتجر و الخدمات
+</a>
+</li>
+<li >
+<a href="#">
+Go4Fame لخدمات الأعمال
+</a>
+</li>
+<li >
+<a href="#">
+قسم الداتا و العملاء 
+</a>
+</li>
+<li >
+<a href="#">
+شحن محفضة Binance   
+</a>
+</li>
+<li>
+<a href="#">
+التسويق و زوار المواقع 
+</a>
+</li>
+<li  class="dropdown">
+<a href="#">
+خدمات خرائط غوغل
+  
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+تقييم 5 نجوم حسابات عربية
+</a>
+</li>
+<li>
+<a href="#">
+تقييم 5 نجوم و تعليقات اختياري حسابات عربية 
+</a>
+</li>
+<li>
+<a href="#">
+تقييم 5 نجوم و تعليقات عشوائي حسابات عربية 
+</a>
+</li>
+</ul>
+</a>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات تيك توك 
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+متابعين تيك توك
+</a>
+</li>
+<li>
+<a href="#">
+لايكات تيك توك
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات مقاطع فيديو تيك توك
+</a>
+</li>
+<li>
+<a href="#">
+مشاركة و نشر مقاطع فيديوا تيك توك
+  
+</a>
+</li>
+<li>
+<a href="#">
+حفظ مقاطع فيديوا تيك توك
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدة بث مباشر تيك توك
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات إنستغرام
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+متابعين انستغرام
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات انستغرام
+</a>
+</li>
+<li>
+<a href="#">
+لايكات انستغرام
+</a>
+</li>
+<li>
+<a href="#">
+تعليقات انستغرام
+</a>
+</li>
+<li>
+<a href="#">
+منشن انستغرام
+</a>
+</li>
+<li>
+<a href="#">
+حفظ منشورات انستغرام
+</a>
+</li>
+<li>
+<a href="#">
+رسائل خاصة لمتابعي حساب انسغرام
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات تويتر
+</a>
+<ul class="dropdown-menu">
+            <li class="subDropDown">
+            <a href="#">
+            باكاجات ريتويت و اعجابات تويتر 
+            </a>
+            <ul class="subDropDown-menu">
+              <li class="#">
+                <a href="#">
+                  باكاجات ريتويت و إعجابات خليجي عربي
+                </a>
+              </li>
+              <li class="#">
+                <a href="#">
+                  باكاجات ريتويت و إعجابات  مكس
+                </a>
+              </li>
+            </ul>
+            </li>
+            <li>
+            <a href="#">
+            متابعين تويتر
+            </a>
+            </li>
+            <li class="subDropDown">
+          
+            <a href="#">
+            ريتويت تويتر
+            </a>
+            <ul class="subDropDown-menu">
+              <li>
+                <a href="#">
+                  ريتويت عربي خليجي
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  ريتويت  مكس تويتر
+                </a>
+              </li>
+                </ul>
+            </li>
+            <li class="subDropDown">
+            <a href="#">
+            اعجابات تويتر
+            </a>
+            <ul class="subDropDown-menu">
+              <li>
+                <a href="#">
+                  إعجابات تويتر عربي خليجي
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  إعجابات تويتر  مكس
+                </a>
+              </li>
+                </ul>
+            </li>
+            <li class="subDropDown">
+            <a href="#">
+              تعليقات تويتر 
+            </a>
+            <ul class="subDropDown-menu">
+              <li>
+                <a href="#">
+                  تعليقات من إختيارك حسابات عربية خليجية
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  تعليقات من إختيارك حسابات  مكس
+                </a>
+              </li>
+            </ul>
+            </li>
+<li>
+<a href="#">
+مشاهدات لتغريدات تويتر
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات لتغريدات تويتر
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات فيديوا تويتر
+</a>
+</li>
+<li>
+<a href="#">
+إقتباسات لتغريدات تويتر
+</a>
+</li>
+<li>
+<a href="#">
+إنطباعات تويتر
+</a>
+</li>
+<li>
+<a href="#">
+نقرات تويتر
+</a>
+</li>
+<li>
+<a href="#">
+تصويت إستفتاء تويتر
+</a>
+</li>
+                                  <li>
+                                  <a href="#">
+                                  منشن تويتر
+                                  </a>
+                                  </li>
+<li>
+<a href="#">
+رسائل خاصة لمتابعين حساب محدد تويتر
+
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات سناب شات
+</a>
+<ul class="dropdown-menu">
+<li class="subDropDown">
+<a href="#">
+متابعين سناب شات
+</a>
+<ul class="subDropDown-menu">
+<li>
+<a href="#">
+متابعين من السعودية سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين من الإمارات سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين من قطر سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين من الكويت سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين من البحرين سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين من عمان سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين عربي خليجي  سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+متابعين مكس  سناب شات
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">
+مشاهدات عربي خليجي سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات عالمية مكس سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+باكجات سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات و لايكات منصة الأضواء سناب شات
+</a>
+</li>
+<li>
+<a href="#">
+
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات يوتيوب
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+مشتركين قنوات يوتيوب
+</a>
+</li>
+<li>
+<a href="#">
+لايكات يوتيوب إكسبلور
+</a>
+</li>
+<li class="subDropDown">
+<a href="#">
+مشاهدات يوتيوب
+</a>
+<ul class="subDropDown-menu">
+<li>
+<a href="#">
+مشاهدات حقيقية تحقق إرادات يوتيوب 
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات حقيقية من السعودية 
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات حقيقية مكس يوتيوب 
+</a>
+</li>
+
+
+
+</ul>
+</li>
+<li>
+<a href="#">
+مشاهدات بث مباشر يوتيوب
+</a>
+</li>
+<li>
+<a href="#">
+تعليقات يوتيوب من إختيارك عرب
+</a>
+</li>
+<li class="subDropDown">
+<a href="#">
+يوتيوب شورتس
+</a>
+<ul class="subDropDown-menu">
+<li>
+<a href="#">
+مشاهدات يوتيوب شورتس
+</a>
+</li>
+<li>
+<a href="#">
+لايكات يوتيوب شورتس
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">
+تحقيق متطلبات الدرع الفضي يوتيوب
+</a>
+</li>
+<li>
+<a href="#">
+ساعات مشاهدة يوتيوب
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات تويتش
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+متابعين تويتش
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات كليب تويتش
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات بث لمدة ساعة تويتش
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات بث لمدة 3 ساعات تويتش
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدات بث لمدة 5 ساعات تويتش
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات ديسكورد
+</a>
+<ul class="dropdown-menu">
+<li  class="subDropDown">
+<a href="#">
+أعضاء ديسكورد اونلاين
+</a>
+<ul class="subDropDown-menu">
+<li>
+<a href="#">
+أعضاء ديسكورد NET اون لاين من سنة إلى سنتين 
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء ديسكورد اون لاين لمدة شهر           </a>
+</li>
+<li>
+<a href="#">
+أعضاء ديسكورد اون لاين لمدة 3 أشهر 
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء ديسكورد اون لاين لمدة 6 أشهر 
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء ديسكورد اون لاين لمدة 12 أشهر 
+</a>
+</li>
+</ul>
+</li>
+<li  class="subDropDown">
+<a href="#">
+أعضاء ديسكورد
+</a>
+<ul class="subDropDown-menu">
+<li>
+<a href="#">
+أعضاء ديسكورد رجال
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء ديسكورد نساء
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء ديسكورد مكس
+</a>
+</li>
+
+</ul>
+</li>
+<li>
+<a href="#">
+رسائل لأعضاء سيرفر محدد ديسكورد
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات تليجرام
+</a> 
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+أعضاء من قروبات متعلقة ب NFT & Crypto
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء من قروبات متعلقة ب Amazon
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء متعلقة ب Ebay تليجرام
+</a>
+</li>
+<li>
+<a href="#">
+سحب أعضاء جروبات محددة من إختيارك تليجرام
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء قناة أو مجموعة عامة مكس تليجرام
+</a>
+</li>
+<li>
+<a href="#">
+أعضاء قناة مخفية خاصة مكس تليجرام
+
+</a>
+</li>
+<li>
+<a href="#">
+رسائل خاصة لأعضاء قناة محددة تليجرام
+</a>
+</li>
+<li>
+<a href="#">
+تصويت إستفتاء تليحرام
+</a>
+</li>
+<li>
+<a href="#">
+تصويت إستفتاء تليجرام
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدة المشاركات السابقة تليجرام
+</a>
+</li>
+<li>
+<a href="#">
+مشاهدة المشاركات القادمة تليجرام
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">
+خدمات تطبيقات الجوال
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+تنزيل و تثبيت و فتح التطبيق على App Store
+</a>
+</li>
+<li>
+<a href="#">
+تنزيل و تثبيت و تقييم التطبيق على App Store
+</a>
+</li>
+<li>
+<a href="#">
+تنزيل و تثبيت و تقييم و تعليق للتطبيق على App Store
+</a>
+</li>
+<li>
+<a href="#">
+بحث و تنزيل و تثبيت و فتح التطبيق على Google Play
+</a>
+</li>
+<li>
+<a href="#">
+تنزيل و فتح و تقييم التطبيق على Google Play
+</a>
+</li>
+<li>
+<a href="#">
+تنزيل و فتح و تقييم و تعليق للتطبيق على Google Play
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-menu">
+<a href="#">
+خدمات البرامج الأخرى
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="#">
+خدمات لينكدإن
+</a>
+</li>
+<li>
+<a href="#">
+خدمات فيسبوك
+</a>
+</li>
+<li>
+<a href="#">
+خدمات لايكي
+</a>
+</li>
+<li>
+<a href="#">
+خدمات كواي
+</a>
+</li>
+<li>
+<a href="#">
+خدمات كورا
+</a>
+</li>
+<li>
+<a href="#">
+خدمات بيقو لايف
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+
+</div>
+<!-- Whatsapp Fixed Icon -->
+<a href="https://api.whatsapp.com/send?phone=+966565555275" target="_blank" class="whatsapp-scroll">
+  <img src="./images/whatsapscroll.svg" alt=""/>
+  </a>
+<!-- Whatsapp Fixed Icon -->
+<!--  Header -->
+
+<div class="categoryPage">
+<div class="container">
+<div class="productPage-top">
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+</a>
+<span>/</span>
+<a href="#" class="productCategory"> قسم خدمات الأعمال </a>
+</div>
+<!-- Filter-->
+<div class="product-filter">
+<div class="select-filter">
+<span class="filter-selected">الترتيب الإفتراضي
+</span>
+<i class="fa-solid fa-arrow-up-short-wide"></i>
+</div>
+<ul class="filter-menu">
+<li>الأكثر مبيعاً</li>
+<li>الأكثر بحثاً</li>
+<li>الأحدث </li>
+<li>الأقل سعرا </li>
+<li>الأعلى سعرا </li>
+</ul>    
+</div>
+
+<script >
+function initializeProductFilters() {
+const productFilters = document.querySelectorAll('.product-filter');
+
+productFilters.forEach(productFilter => {
+const filterSelect = productFilter.querySelector('.select-filter');
+const filterMenu = productFilter.querySelector('.filter-menu');
+const filterOptions = productFilter.querySelectorAll('.filter-menu li');
+const filterSelected = productFilter.querySelector('.filter-selected');
+
+filterSelect.addEventListener('click', ()=> {
+filterSelect.classList.toggle('select-clicked');   
+filterMenu.classList.toggle('filter-open');
+});
+
+filterOptions.forEach(filterOption => {
+filterOption.addEventListener('click', () => {
+filterSelected.innerHTML = filterOption.innerText;
+filterSelect.classList.remove('select-clicked');
+filterMenu.classList.remove('filter-open');
+filterOptions.forEach(filterOption => {
+filterOption.classList.remove('active');
+});
+filterOption.classList.add('active');
+});
+});
+});
+}
+initializeProductFilters();
+</script>
+
+
+    <!-- Category Items  -->
+<div class="category-items">
+
+
+<div class="container">
+
+<div class="category-product_section">
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product6.png" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+حملات إعلانية| سنابشات
+</a>
+</div>
+<div class="product-description">
+<p>
+حملات إعلانية    
+</p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+70 ر.س
+</span>
+<span class="sell-price">
+84 رس  
+</span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+<img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product7.png" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+500 متابع تويتر
+</a>
+</div>
+<div class="product-description">
+<p>
+متابعيين عرب من الخليج  </p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+  46 ر.س
+  </span>
+  <span class="sell-price">
+    59 رس  
+    </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+  <img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product8.png" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+ألف متابع إنستغرام   
+</a>
+</div>
+<div class="product-description">
+<p>
+متابعيين حقيقيين     </p>
+</div>
+<div class="product-price"> 
+<span  class="our-price">
+  82 ر.س
+  </span>
+  <span class="sell-price">
+    90 رس  
+    </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+  <img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product4.jpg" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+300 متابع تيك توك
+</a>
+</div>
+<div class="product-description">
+<p>
+متابعيين عرب        </p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+  120 ر.س
+  </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+
+  <img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product5.jpg" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+تقييم 5 نجوم غوغل ماب      
+</a>
+</div>
+<div class="product-description">
+<p>
+تقييمات غوغل ماب    
+</p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+  100 ر.س
+  </span>
+  <span class="sell-price">
+    150 رس  
+    </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+  <img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+
+</div>
+</div>
+</div>
+<script>
+  // Add to cart button animation
+
+let addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => {
+button.addEventListener('click', event => {
+event.currentTarget.style.transform = 'rotate(-360deg)';
+});
+});
+</script>
+</div>
+</div>
+</div>
+   
+</div>
+</div>
+<!--  Footer -->
+<div class="footer">
+  <div class="footer-container">
+<div class="important-links-footer">
+  <div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+  <a href="#">
+    <i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+  </a>
+  <a href="#">
+    <i class="fa-brands fa-square-instagram p-purple-inst"></i>
+    </a>
+  <a href="#">
+    <i class="fa-brands fa-square-twitter c-blue"></i>
+  </a>
+  <a href="#">
+    <i class="fa-brands fa-square-snapchat yellow "></i>
+  </a>
+  <a href="#">
+    <i class="fa-brands fa-square-google-plus red-google"></i>
+    </a>
+    <a href="#">
+      <i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+          </a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+  <img src="./images/visa.svg" alt="" />
+  <img src="./images/bank.svg" alt="" />
+  <img src="./images/stc.svg" alt="" />
+  <img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+  <p>
+    2023
+    <span> &#169;</span> 
+    Go4Fame
+  جميع الحقوق محفوظة لموقع    
+  
+      
+  </p>
+  
+</div>
+
+</div>
+
+</div>
+<script src="./js/main.js"></script>
+  <script src="./js/user.js"></script> 
+</body>
+</html>

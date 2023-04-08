@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>تفاصيل المنتج | Go4Fame</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/framework.css" />
+<link rel="stylesheet" href="css/main.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+<body>
+
+<!--  Header -->
+
+<div class="header " id="header">
+<!-- Announcement Bar -->
+<div class="announcement-bar hide d-flex aic jcc c-white" id="announcement-bar">
+<i class=" fa-solid fa-xmark close-bar " style="cursor: pointer;" ></i>
+<h1> أحصل على زيادة <span>10%</span> من الخدمة المطلوبة عند الدفع عن طريق التحويل البنكي</h1>
+</div>
+<!-- Announcement Bar -->
+<div class="disktop-nav">
+<!-- Nav Top -->
+<ul class="nav-top " >
+<li class="logo-mobile">
+<a href="index.html"  > 
+<img src="./images/logo.png" alt="go4fame"/>                 
+</a>
+</li>
+<li class="email-header" >
+<div class="nav-bar-email">
+<i class="fa-regular fa-envelope c-black"></i>
+<span> go4fame@info.com</span>             
+</div>
+</li>
+
+</li>
+<li class="services-mobile" id="servicesMobile" >
+<a href="#" >  
+<i class="fa-solid fa-store"></i>
+</a>
+</li>
+<li class="home-mobile">
+<a href="index.html">
+<i class="fas fa-home"></i>
+</a>
+</li>
+<li class="join" id="join">
+
+<a href="login.html" id="header-join_button">
+<i class="fa-solid fa-circle-user"></i>    <span>تسجيل الدخول</span>
+</a>  
+</li>
+</li>
+<li id="user-info">
+<a href="profile.html" class="user-name" id="user"></a>
+<img src="./images/avatar1.png" id="user-dropdown-toggle">
+
+<ul class="user-menu" id="user-dropdown-menu">
+<li>
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+الصفحة الرئيسية</a>
+
+</li>
+<li>
+<a href="userDashBoard.html">
+<i class="fa-solid fa-gauge-high"></i> 
+لوحة التحكم
+</a>
+</li>
+<li>
+<a href="#"> 
+
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+تسجيل الخروج
+</a>
+</li>
+</ul>
+
+<!-- JavaScript code -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+// Your code here
+// Get a reference to the dropdown menu element and the button that toggles it
+const dropdownMenu = document.getElementById("user-dropdown-menu");
+const dropdownButton = document.getElementById("user-dropdown-toggle");
+
+// Add a click event listener to the button that toggles the dropdown menu
+dropdownButton.addEventListener("click", function() {
+dropdownMenu.classList.toggle("open-user-menu");
+});
+
+// Add a click event listener to the document object
+document.addEventListener("click", function(event) {
+// Check if the clicked element is inside the dropdown menu or the button that toggles it
+if (!dropdownMenu.contains(event.target) && event.target !== dropdownButton) {
+// If the clicked element is not inside the dropdown menu or the button that toggles it, close the menu
+dropdownMenu.classList.remove("open-user-menu");
+}
+});
+});
+</script>
+<!-- JavaScript code -->
+
+<a href="register.html" id="logout"> 
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+</a>
+</li>
+
+</ul> 
+<!-- Nav Top -->
+<!-- Nav Bottom -->
+<ul class="nav-bottom">
+<li>
+<a href="index.html" class="logo"> 
+<img src="./images/logo.png" alt="go4fame"/>                 
+</a>
+</li>
+<li>
+<div class="search-box p-relative">
+
+<div class="search p-relative">
+<input id="search" class="p-10" type="search" placeholder="أدخل كلمة بحث" />
+</div>
+</div>
+</li>
+<li class="shoppingCart-favorite">
+<div  class="shopping-cart"  >
+<img class="cart" src="./images/cart2.svg" alt="" id="cartToggle"/>
+<span class="s-cart-summary-count "></span>
+<div class="cart-products" id="cart-products">
+<div>
+
+</div>
+<a href="cartproducts.html">
+كل الخدمات في السلة
+</a>
+
+</div>
+
+<div class="shopping-cart-price"> 
+<span class="price">
+0 
+</span>
+<span class="currency">ر.س</span>
+</div>
+
+</div>
+<!-- JavaScript code -->
+<script>
+
+// Get a reference to the dropdown menu element and the button that toggles it
+var cartproducts = document.getElementById("cart-products");
+var cartproductsToggle = document.getElementById("cartToggle");
+
+// Add a click event listener to the button that toggles the dropdown menu
+cartproductsToggle.addEventListener("click", function() {
+cartproducts.classList.toggle("cart-open");
+});
+
+
+</script>
+<!-- JavaScript code -->
+<div class="favorite-list">
+<a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+</a>
+</div>
+</li>
+</ul>
+<!-- Nav Bottom -->
+</div>
+</div>
+
+
+
+<!-- Whatsapp Fixed Icon -->
+<a href="https://api.whatsapp.com/send?phone=+966565555275" target="_blank" class="whatsapp-scroll">
+  <img src="./images/whatsapscroll.svg" alt=""/>
+  </a>
+<!-- Whatsapp Fixed Icon -->
+
+<!--  Header -->
+
+</div>
+<div class="productPage bg-page">
+<div class="container">
+<div class="productPage-top">
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+</a>
+<span>/</span>
+<a href="#" class="productCategory">خدمات  يوتيوب</a>
+<span>/</span>
+<a href="#" class="productSubCategory"> مشتركين يوتيوب</a>
+<span>/</span>
+<h3 class="productName">1000 مشترك يوتيوب   </h3>
+</div>
+<div class="item-details">
+
+
+  <div class="productImage">
+    <div class="productImage-img">
+    <img  src="./images/product1.png" alt=""/>
+  </div>
+    <div class="productPageIcons">
+    <i class="fa-regular fa-heart"></i>
+    <i class="fa-regular fa-share-from-square"></i>
+    </div>
+    </div>
+    <div class="productInfo">
+    <div class="productTitle">
+    <h2>1000 مشترك يوتيوب</h2>
+    </div>
+    <div class="productDescription">
+    <p> نوفر لكم 1000 مشترك يوتيوب من الخليج العربي</p>
+    </div>
+    <div class="product-price">
+    <span class="our-price">72 ر.س </span>
+    <span class="sell-price">100 ر.س </span>
+    </div>
+    <div class="sellingCount">
+    <i class="fa-solid fa-fire-flame-curved"></i>
+    <span>تم شراءه</span>
+    <span>10568 مرة</span>
+    </div>
+    <div class="infoForbuyers">
+    <div class="productdesc">
+      احصل على  المزيد من المشتركين عرب في قناتك على يوتيوب
+    </div>
+   <div class="productAttributes-container">
+   <div class="productAttributes">
+   <div class="attributeTitle">
+   <h3> 
+   البدأ:
+   <h3>
+   </div>
+   <span>على حسب الطلبات على الخادم ( فوري - 24 ساعة)</span>
+   </div>
+   
+   <div class="productAttributes">
+   <div class="attributeTitle">
+   <h3>السرعة:<h3>
+   </div>
+   <span>  على حسب الطلبات على الخادم </span>
+   </div>
+   
+   <div class="productAttributes">
+   <div class="attributeTitle">
+   <h3>
+   المميزات:
+   <h3>
+   </div>
+   <span>  ضمان و إعادة تعبئة 30 يوم</span>
+   </div>
+  </div>
+   <div class="warnings">
+   <h3>تنبيهات</h3>
+   <p>
+   لايسمح للحسابات الاباحية او المخدرات او كل شي ضار وفي حال رصد ذلك سيتم الغاء الطلب دون أي تعويض.
+   </p>
+   <p>
+   لايمكن الغاء الطلب بعد ارسالة.
+   </p>
+   <p>
+   لا تقم بإرسال طلبين لنفس الحساب من نفس نوع الخدمة، إنتظر حتى ينتهي الطلب الأول.
+   
+   </p>
+   <p>
+   عمل طلب جديد يعني أنك قرأت جيداً ووافقت على جميع شروط الموقع وسياسة الإسترجاع.
+   
+   </p>
+   
+   </div>
+   
+   
+   </div>
+   </div>
+</div>
+<!-- Tags box -->
+<div class="itemTags">
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  يوتيوب
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  ترويج
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  مشتركين
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  قنوات يوتيوب
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  إعلانات
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  تشهير
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  نشر قنوات يوتيوب
+  </a>
+  <a href="#" class="tag">
+  <i class="fa-solid fa-tag"></i>
+  مشتركين عرب
+  </a>
+  </div>
+<!-- Get Item Box -->
+<div class="getItem">
+<div class="link">
+<label class="linkValue">رابط القناة</label>
+<input type="url" placeholder="قم بلصق الرابط هنا" required>
+</div>
+
+<div class="Number">
+<label class="NumberValue"> عدد المشتركين الحالي للقناة</label>
+<input type="number" placeholder="ادخل العدد هنا" name="quantity" min="0" max="100" step="1" required>
+
+</div>
+<div class="productPriceBox">
+<span>السعر</span>
+<span class="our-price">10 ر.س</span>
+</div>
+<div class="addToCart">
+<button class="addToCartBtn"> إضافة الى السلة</button>
+</div>
+</div>
+<!-- Items suggestion -->
+<div class="suggested-items">
+<h3 class="section-title">منتجات قد تعجبك</h3>
+<div class="container">
+<div class="suggested-product_section">
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product6.png" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+حملات إعلانية| سنابشات
+</a>
+</div>
+<div class="product-description">
+<p>
+حملات إعلانية    
+</p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+70 ر.س
+</span>
+<span class="sell-price">
+84 رس  
+</span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+<img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product7.png" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+500 متابع تويتر
+</a>
+</div>
+<div class="product-description">
+<p>
+متابعيين عرب من الخليج  </p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+46 ر.س
+</span>
+<span class="sell-price">
+  59 رس  
+  </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+<img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product8.png" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+ألف متابع إنستغرام   
+</a>
+</div>
+<div class="product-description">
+<p>
+متابعيين حقيقيين     </p>
+</div>
+<div class="product-price"> 
+<span  class="our-price">
+82 ر.س
+</span>
+<span class="sell-price">
+  90 رس  
+  </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+<img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product4.jpg" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+300 متابع تيك توك
+</a>
+</div>
+<div class="product-description">
+<p>
+متابعيين عرب        </p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+120 ر.س
+</span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+<img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+
+</div>
+</div>
+</div>
+<div class="thumbnail">
+<div class="product-image">
+<img src="./images/product5.jpg" alt=""/>
+</div>
+<div class="product-details">
+<div class="product-name">
+<a href="productDetails.html">
+تقييم 5 نجوم غوغل ماب      
+</a>
+</div>
+<div class="product-description">
+<p>
+تقييمات غوغل ماب    
+</p>
+</div>
+<div class="product-price"> 
+<span class="our-price">
+100 ر.س
+</span>
+<span class="sell-price">
+  150 رس  
+  </span>
+</div>
+<div class="product-action">
+<button class="add-to-cart">
+<img src="./images/add-to-cart.svg" alt=""/>
+</button>
+<i class="favourite fa-regular fa-heart" onclick="toggleHeartIcon(this)"></i>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<!--  Footer -->
+<div class="footer">
+<div class="footer-container">
+<div class="important-links-footer">
+<div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+<a href="#">
+<i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-instagram p-purple-inst"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-twitter c-blue"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-snapchat yellow "></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-google-plus red-google"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+</a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+<img src="./images/visa.svg" alt="" />
+<img src="./images/bank.svg" alt="" />
+<img src="./images/stc.svg" alt="" />
+<img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+<p>
+2023
+<span> &#169;</span> 
+Go4Fame
+جميع الحقوق محفوظة لموقع    
+</p>
+
+</div>
+
+</div>
+
+</div>
+<script src="./js/main.js"></script>
+<script src="./js/user.js"></script> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>إتمام الطلب | Go4Fame</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/framework.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/login.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+<!--  Header -->
+<body>
+
+<div class="checkoutPage bg-page">
+<div class="container ">
+<div class="checkout-leftbar bg-white">
+<div class="cartSummary">
+<span>ملخص السلة</span>
+<span class="value">10 ر.س</span>
+</div>
+<div class="totalOrderBill">
+<span> إجمالي الطلب</span>
+<span class="value">10 ر.س</span>
+</div>
+<h3 class="YouHaveCoupon">
+<i class="fa-solid fa-tags"></i>
+هل لديك كوبون تخفيض ؟
+</h3>
+<div class="coupon-code-container">
+<input type="text" id="coupon-code" placeholder="أدخل رمز الكوبون"/>
+<button type="button" id="apply-button">تطبيق</button>
+
+</div>
+<button class="fulfillingPaymentBtn" id="fulfillingPaymentBtn">
+إكمال الدفع
+</button>
+</div>
+<div class="checkout-rightbar  ">
+<div class="checkout-rightbar-container">
+<div class="topRightBar-checkout">
+<div class="checkout-logo">
+<img class="logo" src="./images/logo.png" alt=""/>
+</div>
+<div class="topRightBar-checkoutInfo">
+<div class="welcomeUser">
+<span>مرحبا بك</span>
+<h2 class="profileUser-name" id="username"> اسامة دوادي </h2>
+</div>
+<div class="pageTrack">
+<a href="index.html">وكالة Go4Fame</a>
+<a href="cartproducts.html">سلة المشتريات</a>
+<a>إنهاء الطلب </a>
+
+</div>
+</div>
+
+</div>
+<div class="divider">
+<div class="paymentSectionDevider">
+<span class="cart-summery">1</span>
+<img src="./images/paymentIcon.svg"/>
+<span class="paymentWord">الدفع</span>
+<span class="divide"></span>
+</div>
+
+
+<div class="payment-methods">
+<div class="payment-method" id="payment-method-1" tabindex="0">
+<img src="./images/madapayment.png"  />
+</div>
+<div class="payment-method" id="payment-method-2" tabindex="0">
+<img src="./images/visapayment.png"/>
+</div>
+<div class="payment-method" id="payment-method-3" tabindex="0">
+<img src="./images/stcpaymnt.png"/>
+</div>
+<div class="payment-method paymentBank" id="payment-method-4" tabindex="0">
+<i class="fa-solid fa-building-columns"></i>
+<span> تحويل بنكي</span>
+</div>
+</div>
+
+<div class="forms">
+<form id="form-1" class="payment-form">
+<div class="card-details">
+<input type="text" id="madacardNumber" name="cardNumber" placeholder="رقم البطاقة " required>
+<input type="text" id="madaexpiryDate" name="expiryDate" placeholder=" الشهر/السنة" required pattern="\d{2}/\d{2}">
+<input type="password" id="madacvv" name="cvv" minlength="3" maxlength="4" placeholder="الرمز" required>
+</div>
+<div class="terms">
+<input type="checkbox" id="madatermsAgree" name="termsAgree" required>
+
+تقر الاقرار الكامل النافي للجهالة بإطلاعك على إقرا قبل أن تطلب وموافقتك على 
+<a href="#">
+الشروط والاحكام
+</a>
+و 
+<a href="#">
+سياسة الاستبدال والاسترجاع   
+</a>  
+</label>
+</div>
+<div class="paymentbtnSection">
+<button class="paymentBtn" type="submit">إكمال الدفع</button>
+</div>
+</form>
+<form id="form-2" class="payment-form hidden">
+<div class="card-details">
+<input type="text" id="madacardNumber" name="cardNumber" placeholder="رقم البطاقة " required>
+<input type="text" id="madaexpiryDate" name="expiryDate" placeholder=" الشهر/السنة" required pattern="\d{2}/\d{2}">
+<input type="password" id="madacvv" name="cvv" minlength="3" maxlength="4" placeholder="الرمز" required>
+</div>
+<div class="terms">
+<input type="checkbox" id="madatermsAgree" name="termsAgree" required>
+تقر الاقرار الكامل النافي للجهالة بإطلاعك على إقرا قبل أن تطلب وموافقتك على 
+<a href="#">
+الشروط والاحكام
+</a>
+و 
+<a href="#">
+سياسة الاستبدال والاسترجاع   
+</a>  
+</div>
+<div class="paymentbtnSection">
+<button class="paymentBtn" type="submit">إكمال الدفع</button>
+</div>
+</form>
+<form id="form-3" class="payment-form hidden">
+<div class="inputGroup">
+<input type="tel" id="phone" name="phone" placeholder="+966 11 123 4567" pattern="\+966 \d{2} \d{3} \d{4}" required>
+<div class="icon">
+<img src="./images/saudiflag.svg" alt="" />
+</div>
+</div>
+<div class="terms">
+<input type="checkbox" id="madatermsAgree" name="termsAgree" required>
+تقر الاقرار الكامل النافي للجهالة بإطلاعك على إقرا قبل أن تطلب وموافقتك على 
+<a href="#">
+الشروط والاحكام
+</a>
+و 
+<a href="#">
+سياسة الاستبدال والاسترجاع   
+</a>  
+</div>
+<div class="paymentbtnSection">
+<button class="paymentBtn" type="submit">إكمال الدفع</button>
+</div>
+</form>
+<form id="form-4" class="payment-form hidden">
+<div class="bankAccount">
+<h3 class="chooseAccount">إختر حساب التاجر</h3>
+<select>
+<option>
+البنك الأهلي التجاري -وكالة GO4Fame للدعاية و الإعلان 
+</option>    
+</select>
+<div class="bankAccountDetails">
+<img class="id-image" src="./images/id.svg" alt=""/>
+<div class="ownerDetails">
+<div class="ownerName">
+<h1>صاحب الحساب</h1>
+<span>وكالة go4fame</span>
+</div>
+<div class="ownerNumber">
+<h1>رقم الحساب</h1>
+<span> 00000000</span>
+</div>
+<div class="ibanNumber">
+<h1>رقم الإيبان</h1>
+<span> 00000000</span>
+</div>
+</div>
+
+</div>
+<div class="br-upload">
+<label class="upload-label" for="single-file">
+<i class="fa-solid fa-file-arrow-up"></i>
+<span>  الرجاء إرفاق صورة الإيصال </span></label>
+<input class="upload-input" id="single-file" type="file" />
+<div class="upload-list"></div>
+</div>
+<div class="toAccount">
+<input type="text" placeholder="إسم صاحب الحساب الذي تم التحويل منه">
+</div>
+<div class="terms">
+<input type="checkbox" id="madatermsAgree" name="termsAgree" required>
+تقر الاقرار الكامل النافي للجهالة بإطلاعك على إقرا قبل أن تطلب وموافقتك على 
+<a href="#">
+الشروط والاحكام
+</a>
+و 
+<a href="#">
+سياسة الاستبدال والاسترجاع   
+</a>  
+</div>
+<div class="paymentbtnSection">
+<button class="paymentBtn" type="submit">إكمال الدفع</button>
+</div>
+</div>
+</form>
+</div>
+
+<script>
+const paymentMethods = document.querySelectorAll('.payment-method');
+const paymentForms = document.querySelectorAll('.payment-form');
+
+// Hide all payment forms except the first one
+paymentForms.forEach((paymentForm, index) => {
+if (index > 0) {
+paymentForm.classList.add('hidden');
+}
+});
+
+paymentMethods.forEach(paymentMethod => {
+paymentMethod.addEventListener('click', () => {
+// Hide all payment forms
+paymentForms.forEach(paymentForm => {
+paymentForm.classList.add('hidden');
+});
+
+// Show the payment form for the clicked payment method
+const paymentMethodId = paymentMethod.id.split('-')[2];
+const paymentForm = document.querySelector(`#form-${paymentMethodId}`);
+paymentForm.classList.remove('hidden');
+});
+});
+
+</script>
+
+
+
+</div>
+</div>
+<div class="safeShopping bg-page">
+<i class="fa-solid fa-shield-heart"></i>
+<i class="fa-brands fa-expeditedssl"></i>
+<i class="fa-solid fa-credit-card"></i>
+</div>
+</div>
+</div>
+</div>
+<!--  Footer -->
+<div class="footer">
+<div class="footer-container">
+<div class="important-links-footer">
+<div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+<a href="#">
+<i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-instagram p-purple-inst"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-twitter c-blue"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-snapchat yellow "></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-google-plus red-google"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+</a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+<img src="./images/visa.svg" alt="" />
+<img src="./images/bank.svg" alt="" />
+<img src="./images/stc.svg" alt="" />
+<img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+<p>
+2023
+<span> &#169;</span> 
+Go4Fame
+جميع الحقوق محفوظة لموقع    
+
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+<script src="./js/main.js"></script>
+<script src="./js/user.js"></script>
+<script src="./js/cart.js"></script>
+
+
+</body>
+</html>

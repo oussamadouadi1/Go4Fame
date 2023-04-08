@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>GO4Fame</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+                          <!-- Font Awesome -->
+     <link rel="stylesheet" href="css/all.min.css" />
+                          <!-- Font Awesome -->
+
+                          <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+                          <!-- Google Fonts -->
+</head>
+<body>
+                          <!--  Header -->
+<div class="header " id="header">
+                          <!-- Announcement Bar -->
+<div class="announcement-bar hide d-flex aic jcc c-white" id="announcement-bar">
+<i class=" fa-solid fa-xmark close-bar " style="cursor: pointer;" ></i>
+<h1> أحصل على زيادة <span>10%</span> من الخدمة المطلوبة عند الدفع عن طريق التحويل البنكي</h1>
+</div>
+                          <!-- Announcement Bar -->
+                          <!-- Disktop Nav -->
+<div class="disktop-nav">
+                          <!-- Nav Top -->
+<ul class="nav-top " >
+<li class="logo-mobile">
+<a href="index.html"  > 
+<img src="./images/logo.png" alt="go4fame"/>                 
+</a>
+</li>
+<li class="email-header" >
+<div class="nav-bar-email">
+<i class="fa-regular fa-envelope c-black"></i>
+<span> go4fame@info.com</span>             
+</div>
+</li>
+</li>
+<li class="services-mobile" id="servicesMobile" >
+<a href="#" >  
+<i class="fa-solid fa-store"></i>
+</a>
+</li>
+<li class="home-mobile">
+<a href="index.html">
+<i class="fas fa-home"></i>
+</a>
+</li>
+<li class="join" id="join">
+
+<a href="login.html" id="header-join_button">
+<i class="fa-solid fa-circle-user"></i>    <span>تسجيل الدخول</span>
+</a>  
+</li>
+</li>
+<li id="user-info">
+<a href="profile.html" class="user-name" id="user"></a>
+<img src="./images/avatar1.png" id="user-dropdown-toggle">
+
+<ul class="user-menu" id="user-dropdown-menu">
+<li>
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+الصفحة الرئيسية</a>
+
+</li>
+<li>
+<a href="userDashBoard.html">
+<i class="fa-solid fa-gauge-high"></i> 
+لوحة التحكم
+</a>
+</li>
+<li>
+<a href="#"> 
+
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+تسجيل الخروج
+</a>
+</li>
+</ul>
+
+<a href="register.html" id="logout"> 
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+</a>
+</li>
+
+</ul> 
+                          <!-- Nav Top -->
+                          <!-- Nav Bottom-->
+<ul class="nav-bottom">
+<li>
+<a href="index.html" class="logo"> 
+<img src="./images/logo.png" alt="go4fame"/>                 
+</a>
+</li>
+<li>
+<div class="search-box p-relative">
+
+<div class="search p-relative">
+<input id="search" class="p-10" type="search" placeholder="أدخل كلمة بحث" />
+</div>
+</div>
+</li>
+<li class="shoppingCart-favorite">
+<div  class="shopping-cart"  >
+<img class="cart" src="./images/cart2.svg" alt="" id="cartToggle"/>
+<span class="s-cart-summary-count "></span>
+<div class="cart-products" id="cart-products">
+<div>
+
+</div>
+<a href="cartproducts.html">
+كل الخدمات في السلة
+</a>
+
+</div>
+
+<div class="shopping-cart-price"> 
+<span class="price">
+0 
+</span>
+<span class="currency">ر.س</span>
+</div>
+
+</div>
+
+<div class="favorite-list">
+<a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+</a>
+</div>
+</li>
+</ul>
+                          <!-- Nav Bottom -->
+</div>
+</div>
+                          <!-- Disktop Nav -->
+
+                          <!-- Home Page -->
+<div class="home-page">
+<div class="hero pt-0">
+<div class="container">
+<div class="hero_content">
+                          <!-- Side Bar -->
+<nav class="nav-desktop nav-desktop--vertical active" id="sideBarMobile">
+<div class="top-bar">
+<i class="fa-solid fa-store"></i>
+<div class="cat-title">الخدمات</div>
+</div>
+<ul>
+<li class="menu-item " id="">
+<a href="./updatesCategory.html">تحديثات المتجر و الخدمات</a>
+</li>
+<li class="menu-item " id="">
+<a href="#">GO4Fame لخدمات الأعمال</a>
+</li>
+<li class="menu-item " id="">
+<a href="#">شحن محفظة Binance</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">التسويق وزوار المواقع</a>
+</li>
+<li class="menu-item dropdown dropdownMobile" id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات خرائط قوقل</a>
+<div class="sub-menu hide subdropdownMobile" id=""> 
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">تقييم 5 نجوم حسابات عربية</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تقييم 5 نجوم وتعليقات اختياري حسابات عربية</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تقييم 5 نجوم وتعليقات عشوائية حسابات عربية</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle" >&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات تيك توك</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين تيك توك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات تيك توك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات مقاطع فيديو تيك توك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاركة ونشر مقاطع الفيديو تيك توك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">حفظ مقاطع الفيديو تيك توك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات بث مباشر تيك توك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات من حسابات موثقة تيك توك</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات انستقرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">متابعين انستقرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين مكس انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين حسابات موثقة انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين حقيقين انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين ضمان دائم انستقرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd" >&rsaquo;</span>
+<a href="#" data-menu-dropdown="">مشاهدات انستقرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">مشاهدات فيديو جميع الأنواع انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات الاستوري انستقرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">لايكات انستقرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">لايكات حقيقية اكسبلور انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات ضمان شهر انستقرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">تعليقات انستقرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">تعليقات من حسابات مشاهير موثقة انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات من حسابات موثقة عربية انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات من اختيارك عرب انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">ردود على تعليق محدد من اختيارك انستقرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" >منشن انستقرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">منشن من موقع محدد انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن متابعين حساب محدد انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن حسابات أُعجبت بمنشور محدد انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن من هاشتاق محدد انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن حسابات محددة انستقرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id=""> 
+<a href="#">حفظ المنشورات انستقرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">رسائل خاصة لمتابعين حساب محدد انستقرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item dropdown " id=""> <span>&rsaquo;</span>
+<a href="#" data-menu-dropdown="">باكجات ريتويت وإعجاب تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">باكجات ريتويت وإعجاب عربي خليجي</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">باكجات ريتويت وإعجاب مكس</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">متابعين تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين حقيقيين عربي خليجي تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين عربي خليجي تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين حقيقيين مكس تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين مكس تويتر</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">ريتويت تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">ريتويت عربي خليجي تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">ريتويت مكس تويتر</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">إعجاب تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">إعجاب عربي خليجي تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">إعجاب مكس تويتر</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">تعليقات تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">تعليقات من إختيارك حسابات عربية خليجية</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات من إختيارك حسابات مكس</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات لتغريدات تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات فيديو تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">إقتباسات تغريدة تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">إنطباعات تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">نقرات تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تصويت استفتاء تويتر</a>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">منشن تويتر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">منشن متابعين حساب محدد تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن حسابات محددة تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن من هاشتاق محدد تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن من ريتويت حساب محدد تويتر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">منشن من إعجاب حساب محدد تويتر</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">رسائل خاصة لمتابعين حساب محدد تويتر</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle" >&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات سناب شات</a>
+<div class="sub-menu hide" >
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">متابعين سناب شات</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner " id="sub-menuDropdown">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين من السعودية سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين من الإمارات سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين من قطر سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين من الكويت سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين من البحرين سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين من عُمان سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين عربي خليجي سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين مكس سناب شات</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات عربي خليجي سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات عالمية مكس سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">باكجات سناب شات</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات ولايكات منصة الأضواء سناب شات</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات يوتيوب</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">مشتركين قنوات يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات يوتيوب إكسبلور</a>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">مشاهدات يوتيوب</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">مشاهدات حقيقية تحقق ايرادات يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات حقيقية من السعودية يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات حقيقية مكس يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات مستهدفة حسب الدولة مكس يوتيوب</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات بث مباشر يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات يوتيوب من اختيارك عرب</a>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">يوتيوب شورتس</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">مشاهدات يوتيوب شورتس</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات يوتيوب شورتس</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تحقيق متطلبات الدرع الفضي يوتيوب</a>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">ساعات مشاهدة يوتيوب</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">مدة الفيديو أكثر من 15 الى 29 دقيقة يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مدة الفيديو أكثر من 30 الى 59 دقيقة يوتيوب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مدة الفيديو أكثر من 60 دقيقة يوتيوب</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات تويتش</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين تويتش</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات كليب تويتش</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات بث لمدة ساعة تويتش</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات بث لمدة ساعتين تويتش</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات بث لمدة 3 ساعات تويتش</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات بث لمدة 5 ساعات تويتش</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات ديسكورد</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">أعضاء ديسكورد اون لاين</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">أعضاء ديسكورد NFT اون لاين من سنة الى سنتين</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء أعضاء ديسكورد اون لاين لمدة شهر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء أعضاء ديسكورد اون لاين لمدة 3 شهور</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء أعضاء ديسكورد اون لاين لمدة 6 شهور</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء أعضاء ديسكورد اون لاين لمدة 12 شهر</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">أعضاء ديسكورد</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">أعضاء ديسكورد رجال</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء ديسكورد نساء</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء ديسكورد مكس</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">رسائل لأعضاء سيرفر محدد ديسكورد</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات تليجرام</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">أعضاء من قروبات متعلقة بـ Crypto &amp; NFT تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء من قروبات متعلقة بـ Amazon تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء من قروبات متعلقة بـ Ebay تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">سحب أعضاء قروبات محددة من اختيارك تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء قناة أو مجموعة عامة مكس تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">أعضاء قناة مخفية خاصة مكس تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">رسائل خاصة لأعضاء قناة محددة تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تصويت استفتاء تيلجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدة المشاركات السابقة تليجرام</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدة المشاركات القادمة تليجرام</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات تطبيقات الجوال</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">تنزيل وتثبيت وفتح التطبيق على App Store</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تنزيل وفتح وتقييم التطبيق على App Store</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تنزيل وفتح وتقييم وتعليق للتطبيق على App Store</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">بحث وتنزيل وتثبيت وفتح التطبيق على Google Play</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تنزيل وفتح وتقييم التطبيق على Google Play</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تنزيل وفتح وتقييم وتعليق للتطبيق على Google Play</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""> <span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات العملات الرقمية والـ NFT</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">رفع ترتيب العملة لأكثر مشاهدة على CoinMarketCap</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">رفع ترتيب العملة الى top10 تريند على CoinMarketCap</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين لقائمة المراقبة على CoinMarketCap</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">إضافة العملة لقائمة المراقبة على CoinMarketCap</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات للـ NFT على OpenSea</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تفضيلات للـ NFT على OpenSea</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين للحساب على Rarible</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تفضيلات للـ NFT على Rarible</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">رفع ترتيب العملة الى top10 تريند على CoinGecko</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">نجوم للعملة الرقمية على CoinGecko</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تصويت للمجموعة على NFTSniper</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown dropdownMobile " id=""><span id="dropdownMobileToggle">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات البرامج الاخرى</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات لينكد إن</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين صفحات شخصية لينكدإن</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين صفحات شركات لينكدإن</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات لينكدإن</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات لينكدإن</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات فيسبوك</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين فيسبوك عرب</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">متابعين فيسبوك مكس</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات عربية من اختيارك فيسبوك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تقييم 5 نجوم وتوصيات وتعليقات عربية من اختيارك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات منشورات فيسبوك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاركة ونشر منشورات فيسبوك</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات لايكي</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="">متابعين لايكي ضمان شهر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات لايكي ضمان شهر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات لايكي ضمان شهر</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاركة ونشر منشورات لايكي ضمان شهر</a>
+</li>
+<li class="menu-item dropdown " id="">
+<a href="#" data-menu-dropdown="">تعليقات لايكي ضمان شهر</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">تعليقات لايكي من اختيارك</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">تعليقات لايكي عشوائية</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item dropdown " id=""> <span id="dropdownMobileToggle-nd">&rsaquo;</span>
+<a href="#" data-menu-dropdown="">خدمات كواي</a>
+<div class="sub-menu hide" id="">
+<div class="sub-menu__inner ">
+<ul class="">
+<li class="menu-item  " id="">
+<a href="#">متابعين كواي</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">لايكات كواي</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاركة ونشر كواي</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">مشاهدات كواي</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item  " id="">
+<a href="#">خدمات كْوَرا</a>
+</li>
+<li class="menu-item  " id="">
+<a href="#">خدمات بيقو لايف</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+                          <!-- Side Bar -->
+
+                          <!-- Landing Image -->
+<div class="main-page-landing">
+<div class="main-page-landing-image">
+<img src="./images/sociallanding.png" alt=""/>
+</div>
+<div class="main-page-landing-text">
+<h3 id="animated-heading">
+</h3>
+<p></p>
+</div>
+</div>
+<a href="https://api.whatsapp.com/send?phone=+966565555275" target="_blank" class="whatsapp-scroll">
+<img src="./images/whatsapscroll.svg" alt=""/>
+</a>
+                          <!-- Landing Image -->
+</div>
+</div>
+</div>
+</div>
+</div>
+                          <!-- Home Page -->
+
+                          <!-- Banners Pages -->
+<div class="banner-page">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="banner">
+<div class="banner-image">
+<img src="./images/updates.svg" alt=""/>
+</div>
+<div class="banner-description">
+<p> قم بالإطلاع على آخر التحديثات المضافة لمنصتنا</p>
+</div>
+<a href="#" class="read-more_banner">
+إضغط هنا
+</a>
+</div> 
+<div class="banner">
+<div class="banner-image">
+<img src="./images/telegcontact.svg" alt=""/>
+</div>
+<div class="banner-description">
+<p>يشرفنا إنضمامك إلى قناتنا على تيليغرام </p>
+</div>
+<a href="#" class="read-more_banner">
+إضغط هنا
+</a>
+</div> 
+<div class="banner">
+<div class="banner-image">
+<img src="./images/banner_image3.png" alt=""/>
+</div>
+<div class="banner-description">
+<p> يمكنك الدفع بإستخدام العملات الرقمية </p>
+</div>
+<a href="#" class="read-more_banner">
+إضغط هنا
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+                          <!-- Best Sells Section -->
+<h3 class="section-title"> الأكثر مبيعاً</h3>
+<main class="services-slider">
+<div class="slide-container">
+<div class="sider-controlers">
+<div class="arrow" id="slide-right" >
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+<div class="arrow" id="slide-left" >
+<i class="fa-solid fa-chevron-left"></i>
+</div>
+
+</div>
+<section class="products-section" >
+<div class="slider" id="sliderContainer">
+</div>
+</section>
+</div>
+</main> 
+
+                        <!-- GO4Fame for services -->
+<section class="our-services">
+<h1 class="section-title"> GO4Fame لخدمات الأعمال</h1>
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services3.png" alt=""/>
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services4.png" alt=""/>
+</a>
+</div>
+<div  class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services4.png" alt=""/>
+</a>
+</div>
+<div class="service">
+<a  href="category.html"  class="banner" href="#">
+<img src="./images/services4.png" alt=""/>
+</a>
+</div>
+</div>
+</section>
+                        <!-- GO4Fame for services -->
+
+                        <!-- Section services -->
+<section class="our-services">
+
+<h1 class="section-title">  تسوق في الخدمات  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services2.png" alt=""/>
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services3.png" alt=""/>
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services4.png" alt=""/>
+</a>
+</div>
+
+</div>
+</section>
+                        <!-- Section services -->
+<section class="our-services">
+<h1 class="section-title">  تسوق في الخدمات  </h1>
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services2.png" alt=""/>
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+<img src="./images/services3.png" alt=""/>
+</a>
+</div>
+
+</section>
+
+                        <!-- Section services -->
+                        <!-- Google map services -->
+<section class="our-services">
+<h1 class="section-title">  تسوق في الخدمات  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+
+</div>
+</section>
+                        <!-- Tiktok services -->
+<section class="our-services">
+<h1 class="section-title">  أقسام خدمات تيك توك TikTok  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+
+
+</div>
+</section>
+                        <!-- Twitter services -->
+<section class="our-services">
+
+<h1 class="section-title">     أقسام خدمات تويتر Twitter  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+</div>
+</section>
+                        <!-- Snapchat services -->
+<section class="our-services">
+
+<h1 class="section-title">     أقسام خدمات سناب شات spanchat  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a  href="category.html" class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+
+
+</div>
+</section>
+                        <!-- Youtube services -->
+<section class="our-services">
+<h1 class="section-title">     أقسام خدمات  يوتيوب Youtube  </h1>
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+</div>
+</section>
+                        <!-- Twitch services -->
+<section class="our-services">
+
+<h1 class="section-title">     أقسام خدمات  تويتش Twitch  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+
+</div>
+</section>
+                        <!-- Discord services -->
+<section class="our-services">
+<h1 class="section-title">     أقسام خدمات  ديسكورد Discord  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+
+
+</div>
+</section>
+                        <!-- Telegram services -->
+<section class="our-services">
+
+<h1 class="section-title">     أقسام خدمات  تيليغرام Telegram  </h1>
+
+<div class="ourservices-container">
+<div  class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+</div>
+</section>
+                        <!-- Mobile apps services -->
+<section class="our-services">
+
+<h1 class="section-title">     أقسام خدمات  تطبيقات الجوال   </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+
+
+</div>
+</section>
+                        <!-- other programs services -->
+<section class="our-services">
+
+<h1 class="section-title">         خدمات البرامج الاخرى  </h1>
+
+<div class="ourservices-container">
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+</div>
+<div class="service">
+<a href="category.html"  class="banner" href="#">
+
+<img src="./images/services1.png" alt=""/>
+
+</a>
+
+</div>
+</section>
+
+                        <!-- About US -->
+
+<section class="about">
+<h1 class="section-title">  من نحن </h1>
+<div class="container">
+<div class="about-us-illustration">
+<img class="aboutLogo" src="./images/logo.png" alt="" />
+<img class="illustration" src="./images/aboutus.png" alt=""/>
+</div>
+<div class="aboutUs-description">
+<p>
+<span>Go4Fame</span>
+للدعاية و الإعلان نقدم جميع خدمات الدعم لجميع مواقع التواصل الإجتماعي
+<span>خدماتنا معتمدة، موثوقة و مضمونة .</span>
+<br>
+<span>نحن نعمل على مدار الساعة طوال أيام الأسبوع لنقدم لك كل الدعم الذي تحتاجه.  </span>
+</p>
+<p class="social-media">
+    <img src="./images/aboutSocial1.svg">
+    <img src="./images/aboutSocial2.svg" >
+    <img src="./images/aboutSocial3.svg">
+    <img src="./images/aboutSocial4.svg">
+    <img src="./images/aboutSocial5.svg">
+    <img src="./images/aboutSocial6.svg">
+</p>
+</div>
+</div>
+</section>
+                        <!-- About US -->
+
+
+
+                        <!-- Customer-feedback -->
+<div class="customer-feedback">
+<h3 class="section-title" >
+ماذا يقول عملائنا عنا
+</h3>
+<div class="review-box">
+<div id="slide">
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar1.png" >
+<h3 class="customer-name"> عبد الرحمن</h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="customer-comment">
+<p>
+بارك الله فيكم خدمات ممتازة و معاملة رائعة
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar2.png" >
+<h3 class="customer-name"> خالد </h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+
+</div>
+<div class="customer-comment">
+<p>
+أنصح الجميع بالتعامل معهم
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar3.png" >
+<h3 class="customer-name">  أسماء</h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+
+</div>
+<div class="customer-comment">
+<p>
+بنسبة لي هذه المنصة من أفضل المنصات التي تسهل الخدمات الرقمية
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar4.png" >
+<h3 class="customer-name"> نورهان </h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+
+
+</div>
+<div class="customer-comment">
+<p>
+سرعة في تلبية الطلبات و امانة في التعامل. انصح بالتعامل معهم   
+</p>
+</div>
+
+</div>
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar1.png" >
+<h3 class="customer-name"> عبد الرحمن</h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="customer-comment">
+<p>
+بارك الله فيكم خدمات ممتازة و معاملة رائعة
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar2.png" >
+<h3 class="customer-name"> خالد </h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+
+</div>
+<div class="customer-comment">
+<p>
+أنصح الجميع بالتعامل معهم
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar3.png" >
+<h3 class="customer-name">  أسماء</h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+
+</div>
+<div class="customer-comment">
+<p>
+بنسبة لي هذه المنصة من أفضل المنصات التي تسهل الخدمات الرقمية
+</p>
+</div>
+
+</div>
+
+<div class="card">
+<div class="customer-info">
+<div class="customer-name_photo">
+<img src="./images/avatar4.png" >
+<h3 class="customer-name"> نورهان </h3>
+<div class="rating">
+<span class="customer-rating" data-rating="1">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="2">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="3">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="4">
+<i class="fa fa-star"></i>
+</span>
+<span class="customer-rating" data-rating="5">
+<i class="fa fa-star"></i>
+</span>
+</div>
+</div>
+
+
+</div>
+<div class="customer-comment">
+<p>
+سرعة في تلبية الطلبات و امانة في التعامل. انصح بالتعامل معهم   
+</p>
+</div>
+
+</div>
+
+</div>
+<div class="sidebar">
+<div class="arrow" id="up-arrow" >
+<i class="fa-solid fa-chevron-up"></i>
+</div>
+<div class="arrow" id="down-arrow" >
+<i class="fa-solid fa-chevron-down"></i>
+</div>
+</div>
+</div>
+</div>
+                        <!-- End Customer feedback -->
+                        <!--  Contact Us -->
+<div class="contactUs">
+<div class="overlay"></div>
+<div class="container">
+<h3 class="section-title" >
+تواصل معنا   
+</h3>
+<form action="">
+<div class="right">
+<input type="text" placeholder=" الإسم" name="username">
+<input type="email" placeholder="البريد الإلكتروني" name="email">
+<input type="text" placeholder="الموضوع" name="subject">
+</div>
+<div class="left">
+<textarea name="message" placeholder="رسالتك"></textarea>
+<input type="submit" value="أرسل">
+</div>
+</form>
+</div>
+
+</div>
+                        <!--  Contact Us -->
+                        <!--Upper Footer -->
+<div class="upper-footer">
+<div class="our-attributes-container">
+<div class=" footer-icon thebest-choice">
+<i class="fa-solid fa-award"></i>
+<h3 class="attri-title">  الأفضل دائما</h3>
+<p class="attri-desc"> التفاني و الإخلاص في خدمة الزبون</p>
+</div>
+<div class=" footer-icon high-quality">
+<i class="fa-solid fa-crown"></i>
+<h3 class="attri-title">خدمات عالية الجودة</h3>
+<p class="attri-desc"> نركز على توفير الأفضل للزبون</p>
+</div>
+<div class=" footer-icon  fast-service">
+<i class="fa-solid fa-rocket"></i>
+<h3 class="attri-title">الأسرع دائما</h3>
+<p class="attri-desc"> المرونة و الخفة من شيمنا</p>
+</div>
+<div class="footer-icon safety-and-security">
+<i class="fa-solid fa-shield"></i>
+<h3 class="attri-title"> الأكثر أمنا و سرية</h3>
+<p class="attri-desc"> أمن و سرية تعاملات زبائننا غايتنا</p>
+</div>
+</div>
+</div>
+                        <!--  Footer -->
+<div class="footer">
+<div class="footer-container">
+<div class="important-links-footer">
+<div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+<a href="#">
+<i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-instagram p-purple-inst"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-twitter c-blue"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-snapchat yellow "></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-google-plus red-google"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+    </a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+<img src="./images/visa.svg" alt="" />
+<img src="./images/bank.svg" alt="" />
+<img src="./images/stc.svg" alt="" />
+<img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+<p>
+2023
+<span> &#169;</span> 
+Go4Fame
+جميع الحقوق محفوظة لموقع    
+
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+                        <!-- JavaScript Files -->
+<script src="./js/user.js"></script>
+<script src="./js/data.js"></script>
+<script  src="./js/main.js"></script>
+                        <!-- JavaScript Files -->
+
+
+</body>
+</html>

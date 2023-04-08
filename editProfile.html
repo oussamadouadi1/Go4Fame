@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title> تعديل الملف الشخصي | Go4Fame</title> 
+    <link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/dashboardFrame.css" />
+    <link rel="stylesheet" href="css/userDashboard.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/login.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+
+<div class="page d-flex">
+<div class="sidebar p-20 p-relative">
+<div class="sidebarheader d-flex space-between ">
+<a href="index.html">
+<img class="logo" src="./images/logo.png" alt=""/>
+</a>
+<div class="leftSide d-flex space-between">
+
+<div class="Icons-areaTwo">
+<span class="sidebarbellNotification p-relative">
+<i class="sidebarBell fa-regular fa-bell  c-altwhite cursor-p"></i>
+</span>
+</div>
+
+<div class="icons-areaTwo">
+<span class="sidebarusernotification p-relative">
+<i class=" userIcon fa-regular fa-circle-user c-altwhite cursor-p"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="sidebar-content">
+
+<div class="sidebarSec2">
+<img class="profilePic p-relative " src="./images/avatar1.png" alt=""/>
+<h4 class="sidebarName c-white" id="username">أسامة دوادي</h4>
+<h5 class="sidebarEmail">oussamadouadi1@gmail.com</h5>
+</div>
+<h3 class="dashboard">لوحة التحكم</h3>
+<p class="dashboardDescription">عناصر لوحة التحكم</p>
+<ul>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="index.html">
+<i class="fa-solid fa-house c-white"></i>
+<span >الصفحة الرئيسية </span>
+</a>
+</li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="userDashBoard.html">
+<i class="fa-solid fa-gauge-high c-white"></i>
+<span > لوحة التحكم الرئيسية </span>
+</a>
+</li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="profile.html">
+<i class="fa-solid fa-address-card c-white"></i>
+<span> الملف الشخصي</span>
+</a>
+</li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="myorders.html">
+<i class="fa-solid fa-cart-shopping c-white"></i>
+<span>طلباتي</span>
+</a>
+</li>
+</ul>
+<h3 class="dashboard">مركز المساعدة</h3>
+<p class="dashboardDescription">نوفر أفضل تجربة مستخدم</p>
+<ul>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="#">
+<i class="fa-regular fa-compass"></i>
+<span>الدليل</span>
+</a>
+</li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="#">
+<i class="fa-solid fa-headset c-white"></i>
+<span>الدعم الفني</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content bg-page w-full">
+<!--Start Head-->
+<div class="head p-12 d-flex align-center space-between">
+<div class="search p-relative ">
+<input class=" searchPh p-10 " type="search" placeholder="ادخل كلمة بحث">
+<button class="searchbtn">ابحث</button>
+</div>
+
+<div class="icons d-flex align-center">
+<div class="Icons-area">
+<div class="favorite-list">
+<a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+</a>
+</div>
+<div  class="shopping-cart">
+<img class="cart" src="./images/cart2.svg" alt=""/>
+<span class="s-cart-summary-count">0</span>
+<div class="cart-products">
+<div>
+
+</div>
+<a href="cartproducts.html">
+كل الخدمات في السلة
+</a>
+
+</div>
+
+<div class="shopping-cart-price"> 
+<span class="price">
+0 
+</span>
+<span class="currency">ر.س</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="username">
+<a href="profile.html">
+أسامة دوادي
+</a>
+<img class="headerPic cursor-p" src="./images/avatar1.png" alt=""/>
+
+</div>
+</div>
+
+</div>
+
+
+<!--End Head-->
+
+<h1 class="p-relative">تعديل الملف الشخصي  </h1>
+<div class="wrapper-profile">
+
+<!-- Start Edit User Profile -->
+<div class="Edit-userProfile-basicInfo glass p-20  rad-10 p-relative box-shadow">
+<div class="user-image">
+<div class="user-image-edit-profile">
+<img class="personal-image-place" src="./images/avatar1.png" alt="" />
+<form>
+<div class="upload-personal-img">
+<label for="upload-personal-photo">  
+رفع صورة
+&nbsp;  <i class="fa-solid fa-image"></i>  
+</label>
+<input type="file" name="imageupload" accept="image/*" id="upload-personal-photo"><br>
+</div>
+
+<div class="avatarDropDown">
+<span>أو قم بإختيار أفتار</span>
+<div class="select">
+<span class="selected">
+<img class="avatar" src="./images/avatar1.png">
+</span>
+<div class="caret"></div>
+</div>
+<ul class="menu">
+<li> <img src="./images/avatar2.png" class="avatar"></li>
+<li> <img src="./images/avatar3.png" class="avatar"></li>
+<li> <img src="./images/avatar4.png" class="avatar"></li>
+<li> <img src="./images/avatar5.png" class="avatar"></li>
+<li> <img src="./images/avatar6.png" class="avatar"></li>
+</ul>
+</div>
+
+<script>
+// get all avatar dropdowns
+const avatardropdowns = document.querySelectorAll('.avatarDropDown');
+// loop through all avatar dropdown elements
+avatardropdowns.forEach(avatardropdown => {
+// get inner elements from each dropdown
+const select = avatardropdown.querySelector('.select');
+const caret = avatardropdown.querySelector('.caret');
+const menu = avatardropdown.querySelector('.menu');
+const options = avatardropdown.querySelectorAll('.menu li');
+const selected = avatardropdown.querySelector('.selected img');
+// Add a click listener to select elements
+select.addEventListener('click', () => {
+// Add the clicked select styles to the select element
+select.classList.toggle('select-clicked');
+// Add the rotate style to the caret element
+caret.classList.toggle('caret-rotate');
+// Add the open style to the menu element
+menu.classList.toggle('menu-open');
+});
+// loop through all options elements
+options.forEach(option => { 
+// Add a click event to the option element
+option.addEventListener("click", ()=> {
+// change selected image source to clicked option image source
+selected.src = option.querySelector('.avatar').src;
+// Remove select-clicked class from select element
+select.classList.remove('select-clicked');
+// Remove caret-rotate class from caret element
+caret.classList.remove('caret-rotate');
+// Remove menu-open class from menu element
+menu.classList.remove('menu-open');
+})
+});
+
+// add a click listener to the document object
+document.addEventListener('click', (event) => {
+// check if the target element of the click event is inside the avatar dropdown
+if (!avatardropdown.contains(event.target)) {
+// if it's outside of the dropdown, hide the dropdown
+select.classList.remove('select-clicked');
+caret.classList.remove('caret-rotate');
+menu.classList.remove('menu-open');
+}
+});
+});
+
+
+</script>
+
+</form>
+</div>
+
+<div class="joining-date">
+<i class="fa-solid fa-people-roof"></i>
+<span>تم الانضمام بتاريخ</span>
+<span class="join-date__value">15 / 10 / 2022</span>
+</div>
+</div>
+<div class="user-info">
+<div class="user-info-row first-name">
+<span class="user-info-element">الاسم الاول </span>
+<input type="text" name="" id="" value="اسامة" placeholder="الاسم الاول">
+</div>
+<div class="user-info-row  family-name">
+<span class="user-info-element"> اسم العائلة </span>
+
+<input type="text" name="" id="" value="دوادي" placeholder=" اسم العائلة">  
+</div>
+    
+<div class="user-info-row  user-birth-date">
+<span class="user-info-element">تاريخ الميلاد </span>
+<form class="user-birth-date-form">
+<input type="text" name="" id="birth-dateDay" placeholder="اليوم" value="30">
+<input type="text" name="" id="birth-dateMonth" placeholder="الشهر"value="10">
+<input type="text" name="" id="birth-dateYear" placeholder="السنة" value="2001">
+</form>
+</div>
+<div class="user-info-row  user-phone">
+<span class="user-info-element"> رقم الهاتف </span>
+<input type="text" id="numberInput" name="numberInput" pattern="[0-9]* " placeholder="رقم الهاتف" value="(+213) 557-958-797" >
+</div>
+<div class="user-info-row  user-email">
+<span class="user-info-element"> البريد الالكتروني </span>
+<input type="email" id="emailInput" name="emailInput" placeholder="البريد الالكتروني" value="osdouadi@gmail.com" >
+</div>
+
+<div class="user-info-row  user-country">
+<span class="user-info-element"> الدولة </span>
+<div class="custom-select">
+<select>
+<option value=""> إختر الدولة</option>
+<option value="الجزائر">الجزائر</option>
+<option value="البحرين">البحرين</option>
+<option value="جيبوتي">جيبوتي</option>
+<option value="مصر">مصر</option>
+<option value="العراق">العراق</option>
+<option value="الأردن">الأردن</option>
+<option value="الكويت">الكويت</option>
+<option value="لبنان">لبنان</option>
+<option value="ليبيا">ليبيا</option>
+<option value="المغرب">المغرب</option>
+<option value="موريتانيا">موريتانيا</option>
+<option value="عمان">عمان</option>
+<option value="فلسطين">فلسطين</option>
+<option value="قطر">قطر</option>
+<option value="السعودية">السعودية</option>
+<option value="الصومال">الصومال</option>
+<option value="السودان">السودان</option>
+<option value="سوريا">سوريا</option>
+<option value="تونس">تونس</option>
+<option value="الإمارات">الإمارات</option>
+<option value="اليمن">اليمن</option>
+</select>
+</div>
+</div>
+<div class="user-info-row  user-gender">
+<span class="user-info-element">  الجنس (اختياري)</span>
+<div class="custom-select">
+<select>
+<option value="male">  ذكر</option>
+<option value="Female"> انثى</option>
+</select>
+</div>
+</div>
+</div>
+<div class="submitNewDetails">
+<button class="submitNewDetails-btn" type="submit">
+حفظ التعديلات
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+  <div class="footer-container">
+  <div class="important-links-footer">
+  <div class="footer-section-title">
+  <h3>روابط مهمة</h3>
+  </div>
+  <ul class="footer-links">
+  <a href="#">الشروط و الأحكام</a>
+  <a href="#">سياسة الخصوصية</a>
+  <a href="#"> سياسة الإسترجاع</a>
+  <a href="#">من نحن</a>
+  <a href="#">تواصل معنا</a>
+  </ul>
+  </div>
+  <div class="social-contact-footer">
+  <a href="#">
+  <i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-instagram p-purple-inst"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-twitter c-blue"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-snapchat yellow "></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-google-plus red-google"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+      </a>
+  </div>
+  
+  
+  <div class="footer-payment">
+  <div class="row">
+  <img src="./images/visa.svg" alt="" />
+  <img src="./images/bank.svg" alt="" />
+  <img src="./images/stc.svg" alt="" />
+  <img src="./images/mada.svg" alt="" />
+  </div>
+  </div>
+  <div class="copyRights">
+  <p>
+  2023
+  <span> &#169;</span> 
+  Go4Fame
+  جميع الحقوق محفوظة لموقع    
+  
+  
+  </p>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+
+<script type="module" src="./js/user.js"></script>
+<script  src="./js/data.js"></script>
+<script src="./js/cart.js"></script>
+<script type="module"  src="./js/profile.js"></script>
+</body>
+</html>

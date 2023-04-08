@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title> طلباتي | Go4Fame</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/dashboardFrame.css" />
+    <link rel="stylesheet" href="css/userDashboard.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
+<!-- Font Awesome -->
+     <link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<!-- JavaScript -->
+</head>
+<body>
+
+<div class="page d-flex">
+    <div class="sidebar p-20 p-relative">
+        <div class="sidebarheader d-flex space-between ">
+        <a href="index.html">
+        <img class="logo" src="./images/logo.png" alt=""/>
+        </a>
+        <div class="leftSide d-flex space-between">
+        
+        <div class="Icons-areaTwo">
+        <span class="sidebarbellNotification p-relative">
+        <i class="sidebarBell fa-regular fa-bell  c-altwhite cursor-p"></i>
+        </span>
+        </div>
+        
+        <div class="icons-areaTwo">
+        <span class="sidebarusernotification p-relative">
+        <i class=" userIcon fa-regular fa-circle-user c-altwhite cursor-p"></i>
+        </span>
+        </div>
+        </div>
+        </div>
+        <div class="sidebar-content">
+        
+        <div class="sidebarSec2">
+        <img class="profilePic p-relative " src="./images/avatar1.png" alt=""/>
+        <h4 class="sidebarName c-white" id="username">أسامة دوادي</h4>
+        <h5 class="sidebarEmail">oussamadouadi1@gmail.com</h5>
+        </div>
+        <h3 class="dashboard">لوحة التحكم</h3>
+        <p class="dashboardDescription">عناصر لوحة التحكم</p>
+        <ul>
+        <li>
+        <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="index.html">
+        <i class="fa-solid fa-house c-white"></i>
+        <span >الصفحة الرئيسية </span>
+        </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="userDashBoard.html">
+            <i class="fa-solid fa-gauge-high c-white"></i>
+          <span > لوحة التحكم الرئيسية </span>
+          </a>
+          </li>
+        <li>
+        <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="profile.html">
+        <i class="fa-solid fa-address-card c-white"></i>
+        <span> الملف الشخصي</span>
+        </a>
+        </li>
+        <li>
+        <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="myorders.html">
+        <i class="fa-solid fa-cart-shopping c-white"></i>
+        <span>طلباتي</span>
+        </a>
+        </li>
+        </ul>
+        <h3 class="dashboard">مركز المساعدة</h3>
+        <p class="dashboardDescription">نوفر أفضل تجربة مستخدم</p>
+        <ul>
+        <li>
+        <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="#">
+        <i class="fa-regular fa-compass"></i>
+        <span>الدليل</span>
+        </a>
+        </li>
+        <li>
+        <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="#">
+        <i class="fa-solid fa-headset c-white"></i>
+        <span>الدعم الفني</span>
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        
+<div class="content bg-page w-full">
+<!--Start Head-->
+<div class="head p-12 d-flex align-center space-between">
+<div class="search p-relative ">
+<input class=" searchPh p-10 " type="search" placeholder="ادخل كلمة بحث">
+<button class="searchbtn">ابحث</button>
+</div>
+
+<div class="icons d-flex align-center">
+<div class="Icons-area">
+<div class="favorite-list">
+<a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+</a>
+</div>
+<div  class="shopping-cart">
+<img class="cart" src="./images/cart2.svg" alt=""/>
+<span class="s-cart-summary-count">0</span>
+<div class="cart-products">
+<div>
+
+</div>
+<a href="cartproducts.html">
+كل الخدمات في السلة
+</a>
+
+</div>
+
+<div class="shopping-cart-price"> 
+<span class="price">
+0 
+</span>
+<span class="currency">ر.س</span>
+</div>
+</div>
+</div>
+<div class="username">
+<a href="profile.html">
+أسامة دوادي
+</a>
+<img class="headerPic cursor-p" src="./images/avatar1.png" alt=""/>
+</div>
+</div>
+</div>
+<!--End Head-->
+<h1 class="p-relative section-title">طلباتي </h1>
+<div class="wrapper d-grid gap-20">
+<!-- Start Last order -->
+<div class="last-order glass p-20  rad-10 p-relative box-shadow">
+<h2 class="mt-0 mb-20"> حالة آخر عملية شراء</h2>
+<ul class="m-0 p-relative">
+<li class="mt-25 d-flex align-center done"> إضافة إلى السلة</li>
+<li class="mt-25 d-flex align-center done"> التقدم لإتمام الطلب</li>
+<li class="mt-25 d-flex align-center done">الدفع</li>
+<li class="mt-25 d-flex align-center current">التنفيذ</li>
+<li class="mt-25 d-flex align-center "> الإنتهاء</li>
+</ul>
+<img class="launch-icon hide-mobile" src="./images/rocket.png" alt="">
+</div>
+<!-- Start Shopping now -->
+<div class="goToshop-widget bg-white rad-10 txt-c-mobile block-mobile box-shadow ">
+<div class="intro bg-white p-20 d-flex space-between bg-eee">
+<div >
+<h2 class=" m-20">  
+قم بزيارة متجرنا الآن واستكشف خدماتنا المميزة، وابدأ التسوق بثقة مع Goforfame.
+</h2>
+</div>
+<img class="hide-mobile" src="./images/myordersPage.png" alt="" style="width:200px; height: 200px;" />
+</div>
+<a href="index.html" class="visit d-block fs-14 rad-6 bg-blue c-white w-fit btn-shape">إبدا التسوق </a>
+</div>
+<!-- End Start Shopping now-->
+<!-- End Last order -->
+</div>
+<!-- Start orders Table-->
+<div class="ordersTable p-20 glass rad-10 m-20 box-shadow">
+<h2 class="mt-0 mb-20"> طلباتي</h2>
+<div class="responsive-table">
+<table class="fs-15 w-full">
+<thead>
+<tr>
+<td>إسم المنتج</td>
+<td>القسم</td>
+<td>سعر المنتح</td>
+<td> الكمية</td>
+<td> تاريخ الشراء</td>
+<td>الحالة</td>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="#">
+100 متابع انستغرام
+</a>
+</td>
+<td>  
+<a href="#">خدمات انستغرام</a>
+</td>
+<td>
+<span class="price">60</span> 
+ر.س
+</td>
+<td>2</td>
+<td>22 / 01 / 2022</td>
+<td><span class="label btn-shape bg-green c-white">منتهية</span></td>
+</tr>
+<tr>
+<td> <a href="#">
+300 متابع تيك توك</a></td>
+<td>
+<a href="#">
+خدمات تيك توك
+</a>
+</td>
+<td>
+<span class="price">90</span> 
+ر.س
+</td>
+<td>10</td>
+<td>06 / 03 / 2021</td>
+<td><span class="label btn-shape bg-green c-white">منتهية</span></td>
+</tr>
+<tr>
+<td> <a href="#"> 
+150 تقييمات غوغل ماب 
+</a> 
+</td>
+<td>  
+<a href="#">
+خدمات غوغل ماب
+</a>
+
+</td>
+<td>36</td>
+<td>2</td>
+<td>02 / 10 / 2022</td>
+<td><span class="label btn-shape bg-red c-white">ملغاة</span></td>
+</tr>
+<tr>
+<td> <a href="#">
+1000 مشاهدة يوتيوب
+</a>
+</td>
+<td>
+<a href="#">
+خدمات يوتيوب
+</a>    
+</td>
+<td>
+<span class="price">150</span> 
+ر.س
+</td>
+<td>3</td>
+<td> 05 / 06 / 2022</td>
+<td><span class="label btn-shape bg-orange c-white">جاري التنفيذ</span></td>
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- End orders Table-->
+
+<!--  Footer -->
+<div class="footer">
+<div class="footer-container">
+<div class="important-links-footer">
+<div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+<a href="#">
+<i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-instagram p-purple-inst"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-twitter c-blue"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-snapchat yellow "></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-google-plus red-google"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+</a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+<img src="./images/visa.svg" alt="" />
+<img src="./images/bank.svg" alt="" />
+<img src="./images/stc.svg" alt="" />
+<img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+<p>
+2023
+<span> &#169;</span> 
+Go4Fame
+جميع الحقوق محفوظة لموقع    
+
+
+</p>
+
+</div>
+
+</div>
+
+</div>

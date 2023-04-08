@@ -1,0 +1,54 @@
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 4px;
+    }
+    html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: var(--blue-main);
+    }
+    html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background: rgba(#F8F8F8,0.8);
+    background: rgba(var(--color-grey-light),0.8);
+    border-radius: 0;
+    }
+.header .disktop-nav .nav-top {
+    height: 47px;
+}
+.header .disktop-nav .nav-top .logo img {
+    width: 85px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+  }
+  @media(max-width: 768px) {
+
+    .header .disktop-nav .nav-top{
+        position: relative !important;
+        border-top: none;
+        justify-content: space-between;
+    }
+    .header .disktop-nav .nav-top .logo img {
+        width: 60px !important;
+        height: 30px !important;
+    }
+    .header .disktop-nav .nav-top .nav-bar-email span {
+        font-size: 13px;
+    }
+    .header .disktop-nav .nav-top .nav-bar-email i {
+        font-size: 15px;
+        padding-left: 10px;
+        cursor: pointer;
+        color: var(--color-text);
+        transition: 0.3s;
+    }
+}
+@media(min-width: 768px) and (max-width: 992px){
+    .header .disktop-nav .nav-top {
+        position: relative !important;
+        border-top: none;
+    }  }
+    @media(min-width: 992px) and (max-width: 1025px){
+        .header .disktop-nav .nav-top {
+            position: relative !important;
+            border-top: none;
+        }
+    }

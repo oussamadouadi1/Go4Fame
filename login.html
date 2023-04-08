@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> تسجيل الدخول | Go4Fame</title>
+<!-- Swiper CSS -->
+
+<!-- Swiper CSS -->
+
+<link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/framework.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/login.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<!-- JavaScript -->
+<script defer src="./js/login.js"></script>
+
+</head>
+<body>
+<!--  Header -->
+<header>
+<div class="header " id="header">
+<div class="disktop-nav">
+<ul class="nav-top ">
+<a href="index.html" class="logo">
+<img  src="./images/logo.png" alt="go4fame"/>
+</a>
+<div class="nav-bar-email">
+<i class="fa-regular fa-envelope c-black"></i>
+<span> go4fame@info.com</span>             
+</div>
+
+</ul> 
+</div>
+</div>
+
+</div>
+</header>
+
+<div class="login-page bg-page">
+<div class="section-form ">
+<h2>  تسجيل الدخول </h2>
+<form novalidate>
+<div class="inputGroup">
+<label for="email"> البريد الإلكتروني</label>
+<input type="email" placeholder="أدخل البريد الإلكتروني " id="email" onkeyup="vlidateEmail()"/>
+<span id="email-error">  </span>
+</div>
+<div class="inputGroup">
+<label for="password">كلمة المرور</label>
+<input type="password" placeholder="أدخل كلمة مرور" id="password" onkeyup="validatePassword()" />
+<span id="password-error">      </span>
+</div>
+<input type="submit" value="تسجيل الدخول  " id="login" />
+<span id="submit-error">     </span>
+
+</form>
+
+<div class="if-No_account">
+<h3>
+ليس لديك  حساب ؟
+</h3>
+<a href="register.html">
+انشاء حساب جديد    
+</a>
+</div>
+</div>
+</div>
+<!--  Footer -->
+<div class="footer">
+  <div class="footer-container">
+  <div class="important-links-footer">
+  <div class="footer-section-title">
+  <h3>روابط مهمة</h3>
+  </div>
+  <ul class="footer-links">
+  <a href="#">الشروط و الأحكام</a>
+  <a href="#">سياسة الخصوصية</a>
+  <a href="#"> سياسة الإسترجاع</a>
+  <a href="#">من نحن</a>
+  <a href="#">تواصل معنا</a>
+  </ul>
+  </div>
+  <div class="social-contact-footer">
+  <a href="#">
+  <i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-instagram p-purple-inst"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-twitter c-blue"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-snapchat yellow "></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-google-plus red-google"></i>
+  </a>
+  <a href="#">
+  <i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+      </a>
+  </div>
+  
+  
+  <div class="footer-payment">
+  <div class="row">
+  <img src="./images/visa.svg" alt="" />
+  <img src="./images/bank.svg" alt="" />
+  <img src="./images/stc.svg" alt="" />
+  <img src="./images/mada.svg" alt="" />
+  </div>
+  </div>
+  <div class="copyRights">
+  <p>
+  2023
+  <span> &#169;</span> 
+  Go4Fame
+  جميع الحقوق محفوظة لموقع    
+  
+  
+  </p>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+
+
+<script src="./js/user.js"></script>
+<script type="module"  src="./js/profile.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

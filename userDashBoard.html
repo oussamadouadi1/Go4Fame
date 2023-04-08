@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>
+لوحة التحكم الرئيسية | Go4Fame
+</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/tablogo.ico"/>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/dashboardFrame.css" />
+<link rel="stylesheet" href="css/userDashboard.css" />
+<link rel="stylesheet" href="css/login.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- Font Awesome -->
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+</head>
+
+
+<body>
+
+<div class="page d-flex">
+<div class="sidebar p-20 p-relative">
+<div class="sidebarheader d-flex space-between ">
+<a href="index.html">
+<img class="logo" src="./images/logo.png" alt=""/>
+</a>
+<div class="leftSide d-flex space-between">
+
+<div class="Icons-areaTwo">
+<span class="sidebarbellNotification p-relative">
+<i class="sidebarBell fa-regular fa-bell  c-altwhite cursor-p"></i>
+</span>
+</div>
+
+<div class="icons-areaTwo">
+<span class="sidebarusernotification p-relative">
+<i class=" userIcon fa-regular fa-circle-user c-altwhite cursor-p"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="sidebar-content">
+
+<div class="sidebarSec2">
+<img class="profilePic p-relative " src="./images/avatar1.png" alt=""/>
+<h4 class="sidebarName c-white" id="username">أسامة دوادي</h4>
+<h5 class="sidebarEmail">oussamadouadi1@gmail.com</h5>
+</div>
+<h3 class="dashboard">لوحة التحكم</h3>
+<p class="dashboardDescription">عناصر لوحة التحكم</p>
+<ul>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="index.html">
+<i class="fa-solid fa-house c-white"></i>
+<span >الصفحة الرئيسية </span>
+</a>
+</li>
+<li>
+  <a class="d-flex align-center fs-14 c-white rad-6 p-10" href="userDashBoard.html">
+    <i class="fa-solid fa-gauge-high c-white"></i>
+  <span > لوحة التحكم الرئيسية </span>
+  </a>
+  </li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="profile.html">
+<i class="fa-solid fa-address-card c-white"></i>
+<span> الملف الشخصي</span>
+</a>
+</li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="myorders.html">
+<i class="fa-solid fa-cart-shopping c-white"></i>
+<span>طلباتي</span>
+</a>
+</li>
+</ul>
+<h3 class="dashboard">مركز المساعدة</h3>
+<p class="dashboardDescription">نوفر أفضل تجربة مستخدم</p>
+<ul>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="#">
+<i class="fa-regular fa-compass"></i>
+<span>الدليل</span>
+</a>
+</li>
+<li>
+<a class="d-flex align-center fs-14 c-white rad-6 p-10" href="#">
+<i class="fa-solid fa-headset c-white"></i>
+<span>الدعم الفني</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content bg-page w-full">
+<!--Start Head-->
+<div class="head p-12 d-flex align-center space-between">
+<div class="search p-relative ">
+<input class=" searchPh p-10 " type="search" placeholder="ادخل كلمة بحث">
+<button class="searchbtn">ابحث</button>
+</div>
+
+<div class="icons d-flex align-center">
+<div class="Icons-area">
+<div class="favorite-list">
+<a href="favorites.html" id="user"> <i class="myFavorite fa-solid fa-heart"></i>
+</a>
+</div>
+<script>
+function closeCart(event) {
+const cartProducts = document.getElementById('cart-products');
+const cartIcon = document.getElementById('shoppingCart-icon');
+if (!cartProducts.contains(event.target) && event.target !== cartIcon) {
+cartProducts.classList.remove('open-cart');
+document.removeEventListener('click', closeCart);
+}
+}
+</script>
+
+<div class="shopping-cart">
+<img class="cart" src="./images/cart2.svg" alt="" id="shoppingCart-icon" onclick="
+const cartProducts = document.getElementById('cart-products');
+cartProducts.classList.toggle('open-cart');
+if (cartProducts.classList.contains('open-cart')) {
+document.addEventListener('click', closeCart);
+} else {
+document.removeEventListener('click', closeCart);
+}
+event.stopPropagation();
+" />
+<span class="s-cart-summary-count">0</span>
+  <div class="shopping-cart-price"> 
+    <span class="price">
+    0 
+    </span>
+    <span class="currency">ر.س</span>
+    </div>
+    
+
+</div>
+
+
+</div>
+
+<div class="username" >
+<a href="profile.html">
+أسامة دوادي
+</a>
+<script>
+function closeDropdownMenu(event) {
+const dropdownMenu = document.getElementById('user-dropdown-menu');
+const dropdownToggle = document.getElementById('user-dropdown-toggle');
+if (!dropdownMenu.contains(event.target) && event.target !== dropdownToggle) {
+dropdownMenu.classList.remove('open-user-menu');
+document.removeEventListener('click', closeDropdownMenu);
+}
+}
+</script>
+<div class="user-dropdown-menu">
+<img id="user-dropdown-toggle" src="./images/avatar1.png" onclick="
+document.getElementById('user-dropdown-menu').classList.toggle('open-user-menu');
+document.addEventListener('click', closeDropdownMenu);
+event.stopPropagation();
+">
+<ul class="user-menu" id="user-dropdown-menu" >
+<li>
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+الصفحة الرئيسية</a>
+
+</li>
+<li>
+<a href="userDashBoard.html">
+<i class="fa-solid fa-gauge-high"></i> 
+لوحة التحكم
+</a>
+</li>
+<li>
+<a href="#"> 
+
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+تسجيل الخروج
+</a>
+</li>
+</ul>
+</div>
+
+
+</div>
+
+</div>
+<div class="cart-products" id="cart-products">
+<div>
+<p class="productInCartTitle"> 1000 مشترك يوتيوب <span class="productInCartQuantity">5</span></p>
+<p class="productInCartTitle"> 50 مشترك عربي تيك توك<span class="productInCartQuantity">5</span></p>
+<p class="productInCartTitle"> 300 متابع انستغرام<span class="productInCartQuantity">5</span></p>
+</div>
+<a href="cartproducts.html">
+ كل المنتجات في السلة
+</a>
+
+</div>
+
+</div>
+<!--End Head-->
+<h1 class=" section-title p-relative">لوحة التحكم</h1>
+<div class="wrapper d-grid gap-20">
+<!--Start Welcome-->
+<div class="welcome bg-white rad-10 txt-c-mobile block-mobile box-shadow ">
+<h2 class="greeting"> أهلا وسهلا!</h2>
+<div class="intro  p-20 d-flex space-between bg-eee">
+<div >
+<h2 class=" m-20">  
+مرحبًا بك في لوحة تحكمك الشخصية! نحن سعداء جدًا بوجودك هنا.
+
+</h2>
+<p id="username" class="c-grey mt-5">أسامة دوادي</p>
+</div>
+
+<img class="hide-mobile" src="./images/dashboardwc.png" alt="" style="width:200px; height: 200px;" />
+
+</div>
+<img src="./images/avatar1.png" alt="" class="avatar"/>
+<div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+<div id="username">اسامة دوادي <span class="d-block c-grey fs-14 mt-10">إسم المستخدم</span></div>
+<div>78 <span class="d-block c-grey fs-14 mt-10">منتج مشترى </span></div>
+<div>
+<span >750</span> ر.س    
+<span class="d-block c-grey fs-14 mt-10">المدفوعات</span>
+</div>
+</div>
+<a href="profile.html" class="visit d-block fs-14 rad-6 bg-blue c-white w-fit btn-shape">الملف الشخصي</a>
+</div>
+<!--End Welcome-->
+
+
+<!--Start Ticket Widget-->
+<div class="tickets glass p-20  rad-10 box-shadow">
+<h2 class="mt-0 mb-10">إحصائيات </h2>
+<p class="mt-0 mb-20 c-grey fs-15">إحصائيات نشاطي على منصة Go4Fame   </p>
+<div class="d-flex txt-c gap-20 f-wrap">
+<div class="box p-20 rad-10 fs-13 c-grey">
+<i class="fa-solid fa-cart-shopping  fa-2x mb-10 c-orange"></i>
+<span  class="d-block c-black fw-bold fs-25 mb-5">78</span>
+منتج أضيف إلى السلة 
+</div>
+<div class="box p-20 rad-10 fs-13 c-grey">
+<i class="fa-solid fa-spinner fa-2x mb-10 c-purple"></i>
+<span  class="d-block c-black fw-bold fs-25 mb-5">5</span>
+في طور التنفيذ
+</div>
+<div class="box p-20 rad-10 fs-13 c-grey">
+<i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+<span  class="d-block c-black fw-bold fs-25 mb-5">10</span>
+منتج تم شرائه
+</div>
+<div class="box p-20 rad-10 fs-13 c-grey">
+
+<i class="fa-solid fa-trash fa-2x mb-10 c-red"></i>
+<span  class="d-block c-black fw-bold fs-25 mb-5">2</span>
+عملية شراء ملغاة
+</div>
+
+</div>
+</div>
+
+<!--End Ticket Widget-->
+
+<!--Latest News-->
+<div class="latest-news glass p-20  rad-10 txt-c-mobile box-shadow">
+<h2 class="mt-0 mb-20">آخر تحديثات الموقع</h2>
+<div class="news-row d-flex align-center">
+<img src="./image/news1.jpg" alt="">
+<div class="info">
+<h3>تم إضافة منتج جديد قد يعجبك   </h3>
+<p class="m-0 fs-14 c-grey"> ترويح اعلانات انستغرام</p>
+</div>
+<div class="btn-shape bg-eee fs-13 lable">منذ يومين  </div>
+
+</div>
+<div class="news-row d-flex align-center">
+<img src="./image/news2.jpg" alt="">
+<div class="info">
+<h3> تم إضافة منتج جديد قد يعجبك     </h3>
+<p class="m-0 fs-14 c-grey"> 1000 ساعة مشاهدة يوتيوب</p>
+</div>
+<div class="btn-shape bg-eee fs-13 lable">منذ ثلاث ايام</div>
+
+</div>
+<div class="news-row d-flex align-center">
+<img src="./image/news3.jpg" alt="">
+<div class="info">
+<h3> تم إضافة قسم جديد للموقع  </h3>
+<p class="m-0 fs-14 c-grey">قسم خدمات  مواقع التجارة العالمية</p>
+</div>
+<div class="btn-shape bg-eee fs-13 lable">منذ 5 ايام</div>
+
+</div>
+<div class="news-row d-flex align-center">
+<img src="./image/news4.png" alt="">
+<div class="info">
+<h3>تحديث صفحة الدفع</h3>
+<p class="m-0 fs-14 c-grey"> تم اضافة Mada كطريقة دفع في الموقع</p>
+</div>
+<div class="btn-shape bg-eee fs-13 lable">منذ 5 ايام</div>
+
+</div>
+
+</div>
+<!--Latest News-->
+
+<!--Top search -->
+<div class="search-items glass p-20  rad-20 box-shadow">
+<h2 class="mt-0 mb-20">اكثر العناصر المبحوث عنها  </h2>
+<div class="items-head d-flex space-between c-grey mb-10">
+<div> كلمات مفتاحية</div>
+<div>مرات البحث </div>
+</div>
+
+<div class="items d-flex space-between pt-15 pb-15" >
+<span>تغريدات تويتر</span>
+<span class="bg-eee fs-13 btn-shape">20</span>
+</div>
+
+<div class="items d-flex space-between pt-15 pb-15" >
+<span>متابعيين عرب</span>
+<span class="bg-eee fs-13 btn-shape">16</span>
+</div>
+
+<div class="items d-flex space-between pt-15 pb-15" >
+<span>تقييمات غوغل</span>
+<span class="bg-eee fs-13 btn-shape">9</span>
+</div>
+
+<div class="items d-flex space-between pt-15 pb-15" >
+<span>مشاهدات يوتيوب</span>
+<span class="bg-eee fs-13 btn-shape">18</span>
+</div>
+
+<div class="items d-flex space-between pt-15 pb-15" >
+<span>متابعيين انستغرام</span>
+<span class="bg-eee fs-13 btn-shape">30</span>
+</div>
+</div>
+<!-- Top search-->
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+<!--  Footer -->
+<div class="footer">
+<div class="footer-container">
+<div class="important-links-footer">
+<div class="footer-section-title">
+<h3>روابط مهمة</h3>
+</div>
+<ul class="footer-links">
+<a href="#">الشروط و الأحكام</a>
+<a href="#">سياسة الخصوصية</a>
+<a href="#"> سياسة الإسترجاع</a>
+<a href="#">من نحن</a>
+<a href="#">تواصل معنا</a>
+</ul>
+</div>
+<div class="social-contact-footer">
+<a href="#">
+<i class="c-blue fa-brands fa-square-facebook blueDark"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-instagram p-purple-inst"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-twitter c-blue"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-snapchat yellow "></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-google-plus red-google"></i>
+</a>
+<a href="#">
+<i class="fa-brands fa-square-whatsapp c-lightGreen"></i>
+</a>
+</div>
+
+
+<div class="footer-payment">
+<div class="row">
+<img src="./images/visa.svg" alt="" />
+<img src="./images/bank.svg" alt="" />
+<img src="./images/stc.svg" alt="" />
+<img src="./images/mada.svg" alt="" />
+</div>
+</div>
+<div class="copyRights">
+<p>
+2023
+<span> &#169;</span> 
+Go4Fame
+جميع الحقوق محفوظة لموقع    
+
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="./js/user.js"></script>
+<script src="./js/main.js"></script>
+
+
+</body>
+</html>
